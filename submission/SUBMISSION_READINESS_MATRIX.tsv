@@ -1,0 +1,11 @@
+component	status	blocking_requirement
+Article class	PARTIAL	GO_V4 GO_NARROW or STOP_R1 external adjudication
+Target population and estimand	HOLD	Freeze frame eligibility states index claim and analytic population
+Search and sampling	HOLD	PRESS clinical review formal rerun and inclusion probabilities
+Content validity	HOLD	Authentic independent content review
+Human resources	HOLD	Named people qualification COI exposure consent capacity authorization
+Protocol and SAP	LOCKED	Close G0-G3 and register final protocol
+Empirical results	NOT_AVAILABLE	Authorized sample coding and analysis
+Authors and declarations	NOT_COMPLETED	Human author confirmation
+Target journal	NOT_SELECTED	Select after article class and results stabilize
+Submission	LOCKED	Scientific authorship policy and QA gates must close

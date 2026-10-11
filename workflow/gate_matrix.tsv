@@ -1,0 +1,7 @@
+gate_id	gate_name	status	evidence_complete	remaining_requirement	formal_execution_authorized
+C1	estimand_and_construct	PARTIAL	false	Independent scope/statistical review of target frame estimand unknown eligibility and index-claim rule	false
+C2	sampling_frame	HOLD	false	Clinical scope and PRESS review then freeze retrieval frame and inclusion probabilities	false
+C3	content_validity	HOLD	false	Freeze R05/R06 review semantics then obtain two qualified independent full-construct reviews or an explicitly approved alternative	false
+C4	human_resources	HOLD	false	Named qualified people coordinator conflicts exposure availability consent exact-recipient authorization and dispatch receipts	false
+C5	reanalysis_feasibility	SEPARATE_HOLD	false	Close exact result-blind author input and runtime provenance before optional computation	false
+C6	traceability	PASS	true	Maintain versioned receipts known-unknown states and per-round action records	false

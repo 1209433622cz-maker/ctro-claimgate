@@ -1,0 +1,34 @@
+{
+  "contract_version": "public-1.0.0",
+  "project": "R1-CLAIMGATE-EXT-01",
+  "study": "ENG04",
+  "purpose": "result-blind verification of historical CellPhoneDB input and runtime database identity",
+  "acceptable_expression_evidence": [
+    "exact paired expression and metadata exports used in the historical run",
+    "deterministic generating script plus immutable source object or layer and full transformation provenance"
+  ],
+  "required_expression_fields": [
+    "sha256",
+    "byte_count",
+    "matrix_scale",
+    "integer_or_noninteger_status",
+    "feature_namespace",
+    "feature_filtering",
+    "barcode_order",
+    "transformation_order",
+    "paired_metadata_identity"
+  ],
+  "acceptable_database_evidence": [
+    "exact runtime database file with sha256",
+    "immutable database release identifier plus matching hash",
+    "run-binding log that unambiguously identifies the selected database"
+  ],
+  "prohibited_substitutions": [
+    "processed H5AD used as the historical count input without equivalence evidence",
+    "clean-install database treated as the historical runtime database without binding evidence",
+    "outcome-guided search for an input or database that reproduces a published result"
+  ],
+  "execution_authorized": false,
+  "disease_effect_computation_authorized": false,
+  "author_request_status": "DRAFT_NOT_SENT"
+}

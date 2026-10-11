@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store
+Thumbs.db
+local_data/
+private/
+author_materials/
+*.h5
+*.h5ad
+*.rds
+*.rda
+*.mtx
+*.zip
+*.tar
+*.tar.gz
