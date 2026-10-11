@@ -1,7 +1,7 @@
 {
   "authority": "RP_v4_CONDITIONAL_DESIGN_ONLY_RP_v3_FORMAL_LOCK",
   "administrative_stage": "Stage66",
-  "repository_rebuild_status": "LOCAL_CANDIDATE_ONLY_HOLD_MISSING_DELETE_REPO_SCOPE",
+  "repository_rebuild_status": "ACTUAL_DELETE_RECREATE_PUBLIC_PUSH_VERIFIED",
   "G0": "PARTIAL",
   "G1": "HOLD",
   "G2": "HOLD",

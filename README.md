@@ -19,7 +19,7 @@ Research Proposal v4 is conditionally active for **design development**. RP v3 r
 
 Confirmed external reviewers: **0**. Controlled packets sent: **0**. Independent review opinions received: **0**. No formal sample, independent coding or primary claim-state endpoint has been computed. Journal submission is not authorized.
 
-The latest local administrative action is **Stage66, 12 October 2026**: a fresh whole-workspace audit, a byte-conserved author-review preparation package, and preparation of an owner-requested public repository replacement. Scientific gates are unchanged. The deletion request was denied because the current GitHub CLI authorization lacks `delete_repo`; the existing remote is unchanged and this replacement candidate is not published. Git history and accessible records are backed up locally. See [repository rebuild and audit](docs/STAGE66_REBUILD_AUDIT_AND_READINESS.md).
+The latest administrative action is **Stage66, 12 October 2026**: a fresh whole-workspace audit, a byte-conserved author-review preparation package, and owner-requested deletion/recreation of this public repository. The first deletion attempt was denied for missing `delete_repo`; after the owner supplied authorization, deletion, public recreation, actual Git push and fresh-clone checks succeeded. The old repository ID was 1413032204; the new ID is 1414686660. Old Git history and accessible resource records are backed up locally, not silently presented as the new history. Scientific gates are unchanged. See [repository rebuild and audit](docs/STAGE66_REBUILD_AUDIT_AND_READINESS.md).
 
 ## Proposed scientific question
 

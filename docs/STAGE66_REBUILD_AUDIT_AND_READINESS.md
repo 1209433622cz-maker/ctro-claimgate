@@ -2,7 +2,7 @@
 
 Date: 12 October 2026. Administrative work only; no scientific gate promotion.
 
-The owner explicitly requested deletion of the existing project repository and creation of a public replacement from the current curated content. Git refs and accessible issues, pull requests, releases, comments, labels and milestones are backed up locally. The actual deletion request returned HTTP 403 because the CLI authorization lacks `delete_repo`. The existing remote retains its old identity and commit; no replacement is created or pushed. This tree is a prepared local candidate, not a public update. A future deletion/recreation would change GitHub identity. The backup preserves recovery sources, not every GitHub setting, secret or social relationship. No local research data or historical release is deleted.
+The owner explicitly requested deletion of the existing project repository and creation of a public replacement from the current curated content. Git refs and accessible issues, pull requests, releases, comments, labels and milestones were backed up locally, and the history bundle was restored and checked with Git fsck. The first CLI deletion attempt returned HTTP 403 for missing `delete_repo`. After the owner obtained that scope, its presence and the unchanged old numeric identity/main were independently checked. Deletion, same-name public recreation, actual non-force Git push and fresh-clone verification then succeeded. The old identity was 1413032204; the new identity is 1414686660. The backup preserves recovery sources, not every GitHub setting, secret or social relationship. No local research data or historical release was deleted.
 
 The new public tree derives from the previously approved public payload and adds a detailed README, a bounded Stage66 summary, status updates and strengthened validation. A private full-workspace audit is not uploaded wholesale. Data, full text, controlled review packets, identities, correspondence, third-party skill materials, source environments and private path inventories remain local.
 
@@ -13,6 +13,8 @@ The immutable baseline enumerates logical file entries, byte sizes and full-file
 All bytes are read for integrity hashing. Source-data text receives only a capped first-line check without interpretation; HDF5 datasets are not evaluated. No author computation, disease contrast, real literature pilot or formal coding is run. Logical junction counts are not physical storage allocation. Archived inaccessible POSIX links and known historical manifest/runtime-fixture exceptions are disclosed, not silently removed. “Full-file audit” is not a claim of line-by-line scientific review of every dependency or expression value.
 
 The numerical baseline summary is generated from the completed census before public publication. See the updated [audit summary](AUDIT_SUMMARY.md).
+
+Additional image inspection examined 1,456 baseline entries: 975 raster structures and 475 SVG XML objects passed. Six occurrences of two identical 16-bit BMP software test assets are unsupported by the Pillow decoder; their BM magic, declared/actual byte size, bit depth, compression and matching source hashes were checked. They are not manuscript figures and were preserved. The baseline project-Python check parsed 181 scripts without execution. An automatically discovered 1,288-item work-record index is a provenance/navigation aid, not endorsement of every record.
 
 ## Submission boundary and reusable work
 
