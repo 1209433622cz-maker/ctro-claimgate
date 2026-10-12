@@ -1,0 +1,2 @@
+module	frozen_direction	frozen_gene_n	measurable_gene_n	missing_genes	coverage_fraction	case_mean	control_mean	delta	hedges_g	welch_p_one_sided	welch_p_two_sided	leave_one_sample_negative_fraction	leave_one_gene_negative_fraction	max_single_gene_contribution	VPS29_exclusion_delta	replication_pass
+RETRIEVER_CCC_WASH	IgAN_lower_than_control	13	12	WASHC1	0.923076923	0.0587632459	-0.0534211327	0.112184379	0.290783708	0.824509174	0.350981653	0	0	0.164937673	0.104794512	false

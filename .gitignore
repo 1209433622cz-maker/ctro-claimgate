@@ -14,3 +14,13 @@ author_materials/
 *.zip
 *.tar
 *.tar.gz
+*.pdf
+*.docx
+*.xlsx
+*.rda
+.env
+.env.*
+credentials/
+controlled_review/
+participant_mappings/
+raw_expression/

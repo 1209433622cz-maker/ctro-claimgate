@@ -1,0 +1,47 @@
+{
+  "benchmark_id": "ORGAXIS_SYNTH_V2_METRIC_HARMONIZED",
+  "project_count": 300,
+  "accuracy": 0.8833333333333333,
+  "macro_F1": 0.8810817455899733,
+  "per_class": {
+    "TRUE_ADVANCE": {
+      "f1": 0.7804878048780487,
+      "recall": 0.64,
+      "precision": 1.0
+    },
+    "PRIMARY_NULL": {
+      "f1": 0.8928571428571428,
+      "recall": 1.0,
+      "precision": 0.8064516129032258
+    },
+    "MEASUREMENT_MISMATCH": {
+      "f1": 0.99009900990099,
+      "recall": 1.0,
+      "precision": 0.9803921568627451
+    },
+    "CONTEXT_CONFOUNDING": {
+      "f1": 0.9166666666666666,
+      "recall": 0.88,
+      "precision": 0.9565217391304348
+    },
+    "CROSS_SCALE_FAILURE": {
+      "f1": 0.8288288288288288,
+      "recall": 0.92,
+      "precision": 0.7540983606557377
+    },
+    "REPLICATION_REVERSAL": {
+      "f1": 0.8775510204081632,
+      "recall": 0.86,
+      "precision": 0.8958333333333334
+    }
+  },
+  "prediction_recompute_mismatch_n": 0,
+  "primary_checks": {
+    "exact_terminal_gate_accuracy": false,
+    "macro_F1": true,
+    "per_failure_class_recall": true,
+    "true_advance_promotion_recall": false,
+    "independent_prediction_recompute": true
+  },
+  "primary_pass": false
+}

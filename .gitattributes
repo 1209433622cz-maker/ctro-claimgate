@@ -1,1 +1,4 @@
 * text=auto eol=lf
+*.tsv whitespace=-blank-at-eol
+*.svg whitespace=-blank-at-eol
+*.md whitespace=-blank-at-eol

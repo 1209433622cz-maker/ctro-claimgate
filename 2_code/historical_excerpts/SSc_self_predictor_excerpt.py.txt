@@ -1,0 +1,76 @@
+# Explanatory excerpt from project-owned frozen runner; NOT executable standalone.
+# Source lines 136-209. Full runner is not distributed here.
+    ]
+    confounders = pd.DataFrame(index=primary_index)
+    for key in confounder_keys:
+        confounders[key[0]] = zscore(score_vectors[key]).to_numpy()
+    immune_keys = sorted(key for key in score_vectors if key[0].startswith("IMMUNE_") and key[1] == "canonical")
+    immune_frame = pd.DataFrame(
+        {key[0]: score_vectors[key].to_numpy() for key in immune_keys}, index=primary_index
+    )
+    immune_scaled = StandardScaler().fit_transform(immune_frame)
+    pca = PCA().fit(immune_scaled)
+    cumulative = np.cumsum(pca.explained_variance_ratio_)
+    immune_pc_count = min(int(np.searchsorted(cumulative, 0.80) + 1), 4)
+    immune_coordinates = pca.transform(immune_scaled)[:, :immune_pc_count]
+    immune_pcs = pd.DataFrame(
+        immune_coordinates,
+        index=primary_index,
+        columns=[f"immune_PC{i + 1}" for i in range(immune_pc_count)],
+    )
+    full_design = pd.concat([demographics, confounders, immune_pcs], axis=1)
+    stromal = pd.DataFrame(index=primary_index)
+    for key in [("COMPOSITION_ENDOTHELIAL", "canonical"), ("COMPOSITION_FIBROBLASTS", "canonical")]:
+        stromal[key[0]] = zscore(score_vectors[key]).to_numpy()
+    full_stromal_design = pd.concat([full_design, stromal], axis=1)
+    design_tables = {
+        "model_0_unadjusted": demographics[["disease_ssc"]],
+        "model_1_demographic": demographics,
+        "model_2_full_specificity": full_design,
+        "model_2s_full_plus_stromal": full_stromal_design,
+    }
+
+    model_rows: list[dict[str, object]] = []
+    for registry_row in registry.itertuples(index=False):
+        key = (registry_row.module_id, registry_row.set_version)
+        if key not in score_vectors:
+            continue
+        y = zscore(score_vectors[key])
+        coverage_row = coverage[(coverage["module_id"] == key[0]) & (coverage["set_version"] == key[1])].iloc[0]
+        for model_id, design in design_tables.items():
+            fit = fit_model(y, design)
+            model_rows.append(
+                {
+                    "module_id": key[0],
+                    "set_version": key[1],
+                    "module_layer": registry_row.module_layer,
+                    "model_id": model_id,
+                    "n": int(fit["n"]),
+                    "coef_ssc_sd": fit["coef_ssc"],
+                    "se_ssc": fit["se_ssc"],
+                    "p_ssc": fit["p_ssc"],
+                    "r_squared": fit["r_squared"],
+                    "condition_number": fit["condition_number"],
+                    "eligible_genes": int(coverage_row["eligible_genes"]),
+                    "coverage_fraction": float(coverage_row["coverage_fraction"]),
+                    "hard_gate_fdr": np.nan,
+                }
+            )
+    models = pd.DataFrame(model_rows)
+    models["fdr_all_modules_within_model"] = models.groupby("model_id")["p_ssc"].transform(bh)
+    hard_mask = (
+        (models["module_id"].isin(MACHINERY))
+        & (models["set_version"] == "canonical")
+        & (models["model_id"] == "model_2_full_specificity")
+    )
+    models.loc[hard_mask, "hard_gate_fdr"] = bh(models.loc[hard_mask, "p_ssc"])
+
+    loo_rows: list[dict[str, object]] = []
+    contribution_rows: list[dict[str, object]] = []
+    gate_rows: list[dict[str, object]] = []
+    for module in MACHINERY:
+        key = (module, "canonical")
+        genes = eligible_genes[key]
+        coverage_row = coverage[(coverage["module_id"] == module) & (coverage["set_version"] == "canonical")].iloc[0]
+        full = models[
+            (models["module_id"] == module)

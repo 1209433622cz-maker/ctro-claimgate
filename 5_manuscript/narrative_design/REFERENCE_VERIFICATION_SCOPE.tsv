@@ -1,0 +1,8 @@
+reference	primary_locator	verified_scope_this_round	limit
+1	https://pubmed.ncbi.nlm.nih.gov/42683463/ | https://doi.org/10.1002/ggn2.70045	Primary bibliographic identity; published observation-inference-claim framework identified	Wiley/PMC full text could not be freshly opened; no exhaustive novelty claim or full-text verification certification
+2	https://www.nature.com/articles/s41576-023-00586-w	Official article text; multimodal analysis best-practice identity and general scope	Not source of CTRO population mismatch rates
+3	https://www.nature.com/articles/s41467-021-25960-2	Official article text; biological replication and single-cell differential expression limitations	Not evidence that a particular CTRO corpus paper mismatches its claim
+4	https://www.nature.com/articles/s41467-022-30755-0	Official article identity and method/resource comparison content	Method dependence not automatic proof that every communication claim is false
+5	https://doi.org/10.1093/aje/kwac137 | https://pmc.ncbi.nlm.nih.gov/articles/PMC11043784/	Primary identity and causal/associational language study content	Different population/instrument; cannot transfer its rates to CTRO
+6	https://pubmed.ncbi.nlm.nih.gov/27005575/	Official primary abstract; PRESS six retained domains	Completed local extended form is not independent PRESS approval
+7	https://pubmed.ncbi.nlm.nih.gov/33499930/ | https://doi.org/10.1186/s13643-020-01542-z	Primary bibliographic identity and search-reporting extension scope	Reporting completeness does not establish frame coverage or estimand validity

@@ -1,0 +1,7 @@
+version	metric	numerator	denominator	estimate	ci_low	ci_high	frozen_threshold	point_estimate_meets_frozen_threshold	ci_role
+V1	accuracy	146	300	0.4866666666666667	0.43063449599449377	0.5430359832381607	0.9	False	posthoc_audit_precision_only_not_new_pass_rule
+V1	TRUE_ADVANCE_recall	0	50	0.0	6.938893903907228e-18	0.07134759913335872	0.8	False	posthoc_audit_precision_only_not_new_pass_rule
+V1	macro_F1		300	0.3749580221180013			0.85	False	not_calculated
+V2	accuracy	265	300	0.8833333333333333	0.8420668566758442	0.9149068653853369	0.9	False	posthoc_audit_precision_only_not_new_pass_rule
+V2	TRUE_ADVANCE_recall	32	50	0.64	0.501410168761127	0.7586125034815325	0.8	False	posthoc_audit_precision_only_not_new_pass_rule
+V2	macro_F1		300	0.8810817455899734			0.85	True	not_calculated

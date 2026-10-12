@@ -1,0 +1,37 @@
+{
+  "status": "PROSPECTIVE_NOT_EXECUTED",
+  "figure_question": "What units and design requirements precede an empirical paper-level audit?",
+  "panels": {
+    "A": "Design requirements",
+    "B": "Paper selection and index-claim denominator",
+    "C": "Separate conditional computational component"
+  },
+  "visible_labels": [
+    "A   Design approval before observation",
+    "Population and frame",
+    "Scope, search and version rules",
+    "Instrument and resources",
+    "Content review and independent coders",
+    "B   One selected claim per sampled paper",
+    "Unique paper versions",
+    "Probability draw\nFinal inclusion π",
+    "Resolve eligibility",
+    "Eligible / ineligible\nUnresolved tracked",
+    "Fix index claim",
+    "Identity and qualifiers\nBefore evidence rating",
+    "Four candidate states for eligible papers with a fixed claim",
+    "Unresolved eligibility or claim identity stays outside this denominator",
+    "C   Separate conditional computational component",
+    "Specified inputs and author target",
+    "Provenance, permission and tolerance",
+    "Specified output comparison",
+    "Selected subset; separate denominator"
+  ],
+  "minimum_font_points_master": 9.5,
+  "master_width_inches": 7,
+  "embedded_width_inches": 6.27,
+  "symbol_definition": {
+    "π": "final inclusion probability"
+  },
+  "arrows": "proposed workflow sequence, not causal biological relationships"
+}
