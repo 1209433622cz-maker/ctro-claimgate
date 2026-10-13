@@ -2,7 +2,7 @@
   "title": "CTRO RP V5.1 synthetic simulation results and reproduction materials",
   "upload_type": "dataset",
   "publication_date": "2026-10-13",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "creators": [
     {"name":"Chen, Zhi","affiliation":"School of Medicine, The Chinese University of Hong Kong, Shenzhen","orcid":"0009-0001-0072-5576"},
     {"name":"Qi, Teng","affiliation":"School of Medicine, The Chinese University of Hong Kong, Shenzhen","orcid":"0009-0007-7648-4776"}

@@ -6,3 +6,4 @@
 *.svg whitespace=-blank-at-eol
 *.md whitespace=-blank-at-eol
 4_figures/rp_v5_1/v1.0.0/*.svg -text
+4_figures/rp_v5_1/v1.0.0/*.source.json -text whitespace=cr-at-eol
