@@ -1,0 +1,28 @@
+[
+  {
+    "n_per_group": 4,
+    "ordered_draws_per_arm": 81,
+    "convolution_states": 15,
+    "case_exact_unscaled_ratio_fraction": "229067688/418703285",
+    "control_exact_unscaled_ratio_fraction": "-229067688/418703285",
+    "finite_n_shift": 0.8475456224598157,
+    "population_shift": 1.1065666703449764,
+    "finite_minus_population": -0.25902104788516067,
+    "production_helper_shift": 0.8475456224598155,
+    "independent_algorithms": "FACTORIAL_COMPOSITIONS_AND_INTEGER_CONVOLUTION",
+    "not_replacement_primary_estimand": true
+  },
+  {
+    "n_per_group": 12,
+    "ordered_draws_per_arm": 531441,
+    "convolution_states": 91,
+    "case_exact_unscaled_ratio_fraction": "1957625679373679117129378/2905819357430586345786765",
+    "control_exact_unscaled_ratio_fraction": "-1957625679373679117129378/2905819357430586345786765",
+    "finite_n_shift": 1.0436783188100645,
+    "population_shift": 1.1065666703449764,
+    "finite_minus_population": -0.0628883515349119,
+    "production_helper_shift": 1.043678318810064,
+    "independent_algorithms": "FACTORIAL_COMPOSITIONS_AND_INTEGER_CONVOLUTION",
+    "not_replacement_primary_estimand": true
+  }
+]

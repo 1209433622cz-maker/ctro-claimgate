@@ -1,0 +1,4112 @@
+{
+  "figure_id": "Figure2",
+  "role": "STATISTICAL_EVIDENCE_NULL_CALIBRATION",
+  "width_mm": 180,
+  "source_files": [
+    {
+      "path": "0_admin/research_plan/rp_v5_1_main/MAIN_PRE_OUTCOME_FREEZE.json",
+      "bytes": 5581,
+      "sha256": "dc18ed5a23d59a2215e11c8abe3dfc7e41a5e041b75caa37bc9793535914141b"
+    },
+    {
+      "path": "0_admin/research_plan/rp_v5_1_main/FROZEN_MAIN_CONFIG.json",
+      "bytes": 157435,
+      "sha256": "4df62a4f2c57b7d62c82e9ce7bd040a7d7a2fec1e7e299b3e43bc36dfd1ae8d1"
+    },
+    {
+      "path": "3_results/74_execution_audit/FINAL_FULL_READBACK_VALIDATION.json",
+      "bytes": 245159,
+      "sha256": "bda05bc16fe63eb773615ac8c9d537597af25eaa1fdce2da1dfd57c60d3594cf"
+    },
+    {
+      "path": "3_results/74_execution_audit/ALL_MAIN_TARGET_SUMMARIES.json",
+      "bytes": 12692645,
+      "sha256": "1c3c626c043e3ada6ae21cf172b3a671c3be6f6dbc0521672bfbcd576ae4b4bb"
+    },
+    {
+      "path": "3_results/74_execution_audit/ALL_MAIN_FDR_SUMMARIES.json",
+      "bytes": 465327,
+      "sha256": "1300ec5aaada5dba5a684d9be41a6276645e751cf3a251e31925ddc018be2ab2"
+    },
+    {
+      "path": "3_results/74_execution_audit/ALL_MAIN_PAIRED_SUMMARIES.json",
+      "bytes": 2844093,
+      "sha256": "389ab920fc7f662fd41a250d8a76594a0fc0b1fbe6dc7e34472470bd48dab99e"
+    },
+    {
+      "path": "3_results/74_execution_audit/FINAL_MAIN_CHUNK_MANIFEST.json",
+      "bytes": 908357,
+      "sha256": "faee62ff33c80a01a0d084f47587b6738088550e2314154a044f0d979ef76c4b"
+    },
+    {
+      "path": "3_results/74_execution_audit/FINAL_MAIN_SUMMARY_MANIFEST.json",
+      "bytes": 36005,
+      "sha256": "3532538ca1554bccfaa276810a530afc9731bbc42943470402a69a722591a0c6"
+    },
+    {
+      "path": "3_results/72_solo_local_execution/PBC_MODULE_RECONSTRUCTION_AND_SENSITIVITY.json",
+      "bytes": 11483,
+      "sha256": "1d5fa7c2de022ce2510eb7f400dfdc456ab4f7478d8a51a0d0b8a09b4f603d92"
+    },
+    {
+      "path": "3_results/72_solo_local_execution/PRE_OUTCOME_FREEZE.json",
+      "bytes": 10788,
+      "sha256": "4cc08e84d89c59e13e80de88b8a180fcee3fb8b2a3c501e751bb4252a3ae288a"
+    }
+  ],
+  "panels": [
+    {
+      "panel_id": "a",
+      "selection": {
+        "id": "FIG2_PRIMARY_NULL",
+        "module": "M1",
+        "targets": [
+          "theta_D_full",
+          "matching_target"
+        ],
+        "where": {
+          "block": "A",
+          "layout": "cycle5_20_80",
+          "signal_structure": "uniform",
+          "delta": 0.0,
+          "noise": "gaussian"
+        },
+        "vary": [
+          "n_per_group",
+          "rho",
+          "coverage"
+        ],
+        "metrics": [
+          "coverage",
+          "type_I_error_matching_target",
+          "fdr"
+        ],
+        "scenario_ids": [
+          "A016",
+          "A020",
+          "A048",
+          "A052",
+          "A080",
+          "A084",
+          "A112",
+          "A116"
+        ]
+      },
+      "frozen_rule_id": "FIG2_PRIMARY_NULL",
+      "scenario_ids": [
+        "A016",
+        "A020",
+        "A048",
+        "A052",
+        "A080",
+        "A084",
+        "A112",
+        "A116"
+      ],
+      "module_ids": [
+        "M1"
+      ],
+      "target": "theta_D_full",
+      "metric": "coverage",
+      "rows": [
+        {
+          "bias": {
+            "mcse": 0.0011577274952063808,
+            "mean": -0.0009051892490399955,
+            "n": 5000
+          },
+          "ci_length": {
+            "mcse": 0.00021851425935180582,
+            "mean": 0.31839277957836487,
+            "n": 5000
+          },
+          "coverage": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.003251584229264217,
+            "mean": 0.9440000000000013,
+            "n": 5000,
+            "wilson95": [
+              0.9372794866675994,
+              0.9500387940051899
+            ]
+          },
+          "failure_fraction": 0.0,
+          "failure_reasons": {},
+          "mean_squared_error": {
+            "mcse": 0.00013483241888886997,
+            "mean": 0.006701143800407656,
+            "n": 5000
+          },
+          "method": "CELL_NAIVE_WELCH",
+          "module_id": "M1",
+          "n_failed": 0,
+          "n_generated": 5000,
+          "n_valid": 5000,
+          "power_matching_target": {
+            "applicability": "NOT_APPLICABLE_NO_ELIGIBLE_VALID_REPLICATES",
+            "mcse": null,
+            "mean": null,
+            "n": 0,
+            "wilson95": null
+          },
+          "rejection_fields_repeated_across_target_rows_not_independent": true,
+          "rejection_matching_target": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.0032515842292642513,
+            "mean": 0.055999999999999966,
+            "n": 5000,
+            "wilson95": [
+              0.049961205994810104,
+              0.06272051333240064
+            ]
+          },
+          "rmse": 0.08186051429356925,
+          "rmse_mcse_delta_method": 0.0008235497910832333,
+          "scenario_id": "A016",
+          "sign_correct": {
+            "applicability": "NOT_APPLICABLE_NO_ELIGIBLE_VALID_REPLICATES",
+            "mcse": null,
+            "mean": null,
+            "n": 0,
+            "wilson95": null
+          },
+          "target": "theta_D_full",
+          "type_I_error_matching_target": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.0032515842292642513,
+            "mean": 0.055999999999999966,
+            "n": 5000,
+            "wilson95": [
+              0.049961205994810104,
+              0.06272051333240064
+            ]
+          },
+          "scenario_parameters": {
+            "status": "FROZEN_MAIN_NOT_EXECUTED",
+            "module_sizes": [
+              5,
+              11,
+              16,
+              17
+            ],
+            "module_membership": "VIRTUAL_DISJOINT",
+            "gamma": 0.2,
+            "mask_policy": "INDEPENDENT_RANDOM_SUBSET_PER_REPLICATE",
+            "delta_applies_to": "MODULE_1_FULL_DONOR_TARGET",
+            "scenario_id": "A016",
+            "block": "A",
+            "n_per_group": 4,
+            "rho": 0.0,
+            "layout": "cycle5_20_80",
+            "signal_structure": "uniform",
+            "coverage": "full",
+            "delta": 0.0,
+            "noise": "gaussian",
+            "background_overlap": "none",
+            "background_effect": 0.0,
+            "cell_number_rule": "NONINFORMATIVE_FIXED_LAYOUT",
+            "donor_factor": "NOISE_FAMILY",
+            "planned_replicates": 5000
+          }
+        },
+        {
+          "bias": {
+            "mcse": 0.0013152517293462918,
+            "mean": 0.0008096699845547982,
+            "n": 5000
+          },
+          "ci_length": {
+            "mcse": 0.0002444093212431487,
+            "mean": 0.36253973588405314,
+            "n": 5000
+          },
+          "coverage": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.0031456369784195,
+            "mean": 0.9477999999999991,
+            "n": 5000,
+            "wilson95": [
+              0.9412836742322345,
+              0.9536287719057724
+            ]
+          },
+          "failure_fraction": 0.0,
+          "failure_reasons": {},
+          "mean_squared_error": {
+            "mcse": 0.000172897159691349,
+            "mean": 0.00864836123611438,
+            "n": 5000
+          },
+          "method": "CELL_NAIVE_WELCH",
+          "module_id": "M1",
+          "n_failed": 0,
+          "n_generated": 5000,
+          "n_valid": 5000,
+          "power_matching_target": {
+            "applicability": "NOT_APPLICABLE_NO_ELIGIBLE_VALID_REPLICATES",
+            "mcse": null,
+            "mean": null,
+            "n": 0,
+            "wilson95": null
+          },
+          "rejection_fields_repeated_across_target_rows_not_independent": true,
+          "rejection_matching_target": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.0031456369784194737,
+            "mean": 0.05219999999999998,
+            "n": 5000,
+            "wilson95": [
+              0.046371228094227626,
+              0.058716325767765545
+            ]
+          },
+          "rmse": 0.09299656572215116,
+          "rmse_mcse_delta_method": 0.0009295889495958347,
+          "scenario_id": "A020",
+          "sign_correct": {
+            "applicability": "NOT_APPLICABLE_NO_ELIGIBLE_VALID_REPLICATES",
+            "mcse": null,
+            "mean": null,
+            "n": 0,
+            "wilson95": null
+          },
+          "target": "theta_D_full",
+          "type_I_error_matching_target": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.0031456369784194737,
+            "mean": 0.05219999999999998,
+            "n": 5000,
+            "wilson95": [
+              0.046371228094227626,
+              0.058716325767765545
+            ]
+          },
+          "scenario_parameters": {
+            "status": "FROZEN_MAIN_NOT_EXECUTED",
+            "module_sizes": [
+              5,
+              11,
+              16,
+              17
+            ],
+            "module_membership": "VIRTUAL_DISJOINT",
+            "gamma": 0.2,
+            "mask_policy": "INDEPENDENT_RANDOM_SUBSET_PER_REPLICATE",
+            "delta_applies_to": "MODULE_1_FULL_DONOR_TARGET",
+            "scenario_id": "A020",
+            "block": "A",
+            "n_per_group": 4,
+            "rho": 0.0,
+            "layout": "cycle5_20_80",
+            "signal_structure": "uniform",
+            "coverage": "ceil_0.6K",
+            "delta": 0.0,
+            "noise": "gaussian",
+            "background_overlap": "none",
+            "background_effect": 0.0,
+            "cell_number_rule": "NONINFORMATIVE_FIXED_LAYOUT",
+            "donor_factor": "NOISE_FAMILY",
+            "planned_replicates": 5000
+          }
+        },
+        {
+          "bias": {
+            "mcse": 0.009637024450488581,
+            "mean": 0.003895605589709687,
+            "n": 5000
+          },
+          "ci_length": {
+            "mcse": 0.0007100163594562543,
+            "mean": 0.3546781691201396,
+            "n": 5000
+          },
+          "coverage": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.005635530143651086,
+            "mean": 0.19800000000000026,
+            "n": 5000,
+            "wilson95": [
+              0.18718821657361545,
+              0.20927547540119912
+            ]
+          },
+          "failure_fraction": 0.0,
+          "failure_reasons": {},
+          "mean_squared_error": {
+            "mcse": 0.009419297917714141,
+            "mean": 0.4642835047992243,
+            "n": 5000
+          },
+          "method": "CELL_NAIVE_WELCH",
+          "module_id": "M1",
+          "n_failed": 0,
+          "n_generated": 5000,
+          "n_valid": 5000,
+          "power_matching_target": {
+            "applicability": "NOT_APPLICABLE_NO_ELIGIBLE_VALID_REPLICATES",
+            "mcse": null,
+            "mean": null,
+            "n": 0,
+            "wilson95": null
+          },
+          "rejection_fields_repeated_across_target_rows_not_independent": true,
+          "rejection_matching_target": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.005635530143651063,
+            "mean": 0.8020000000000019,
+            "n": 5000,
+            "wilson95": [
+              0.790724524598801,
+              0.8128117834263846
+            ]
+          },
+          "rmse": 0.6813835225474889,
+          "rmse_mcse_delta_method": 0.0069118914722931715,
+          "scenario_id": "A048",
+          "sign_correct": {
+            "applicability": "NOT_APPLICABLE_NO_ELIGIBLE_VALID_REPLICATES",
+            "mcse": null,
+            "mean": null,
+            "n": 0,
+            "wilson95": null
+          },
+          "target": "theta_D_full",
+          "type_I_error_matching_target": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.005635530143651063,
+            "mean": 0.8020000000000019,
+            "n": 5000,
+            "wilson95": [
+              0.790724524598801,
+              0.8128117834263846
+            ]
+          },
+          "scenario_parameters": {
+            "status": "FROZEN_MAIN_NOT_EXECUTED",
+            "module_sizes": [
+              5,
+              11,
+              16,
+              17
+            ],
+            "module_membership": "VIRTUAL_DISJOINT",
+            "gamma": 0.2,
+            "mask_policy": "INDEPENDENT_RANDOM_SUBSET_PER_REPLICATE",
+            "delta_applies_to": "MODULE_1_FULL_DONOR_TARGET",
+            "scenario_id": "A048",
+            "block": "A",
+            "n_per_group": 4,
+            "rho": 0.4,
+            "layout": "cycle5_20_80",
+            "signal_structure": "uniform",
+            "coverage": "full",
+            "delta": 0.0,
+            "noise": "gaussian",
+            "background_overlap": "none",
+            "background_effect": 0.0,
+            "cell_number_rule": "NONINFORMATIVE_FIXED_LAYOUT",
+            "donor_factor": "NOISE_FAMILY",
+            "planned_replicates": 5000
+          }
+        },
+        {
+          "bias": {
+            "mcse": 0.00979211739533958,
+            "mean": 0.002177979718090878,
+            "n": 5000
+          },
+          "ci_length": {
+            "mcse": 0.0006899731176887717,
+            "mean": 0.3766490798789194,
+            "n": 5000
+          },
+          "coverage": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.005705065117945632,
+            "mean": 0.2046000000000001,
+            "n": 5000,
+            "wilson95": [
+              0.19364704960554738,
+              0.21600650870359242
+            ]
+          },
+          "failure_fraction": 0.0,
+          "failure_reasons": {},
+          "mean_squared_error": {
+            "mcse": 0.009702578906905639,
+            "mean": 0.47933667345312536,
+            "n": 5000
+          },
+          "method": "CELL_NAIVE_WELCH",
+          "module_id": "M1",
+          "n_failed": 0,
+          "n_generated": 5000,
+          "n_valid": 5000,
+          "power_matching_target": {
+            "applicability": "NOT_APPLICABLE_NO_ELIGIBLE_VALID_REPLICATES",
+            "mcse": null,
+            "mean": null,
+            "n": 0,
+            "wilson95": null
+          },
+          "rejection_fields_repeated_across_target_rows_not_independent": true,
+          "rejection_matching_target": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.0057050651179456156,
+            "mean": 0.7954000000000016,
+            "n": 5000,
+            "wilson95": [
+              0.7839934912964076,
+              0.8063529503944528
+            ]
+          },
+          "rmse": 0.6923414428250886,
+          "rmse_mcse_delta_method": 0.007007076499215774,
+          "scenario_id": "A052",
+          "sign_correct": {
+            "applicability": "NOT_APPLICABLE_NO_ELIGIBLE_VALID_REPLICATES",
+            "mcse": null,
+            "mean": null,
+            "n": 0,
+            "wilson95": null
+          },
+          "target": "theta_D_full",
+          "type_I_error_matching_target": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.0057050651179456156,
+            "mean": 0.7954000000000016,
+            "n": 5000,
+            "wilson95": [
+              0.7839934912964076,
+              0.8063529503944528
+            ]
+          },
+          "scenario_parameters": {
+            "status": "FROZEN_MAIN_NOT_EXECUTED",
+            "module_sizes": [
+              5,
+              11,
+              16,
+              17
+            ],
+            "module_membership": "VIRTUAL_DISJOINT",
+            "gamma": 0.2,
+            "mask_policy": "INDEPENDENT_RANDOM_SUBSET_PER_REPLICATE",
+            "delta_applies_to": "MODULE_1_FULL_DONOR_TARGET",
+            "scenario_id": "A052",
+            "block": "A",
+            "n_per_group": 4,
+            "rho": 0.4,
+            "layout": "cycle5_20_80",
+            "signal_structure": "uniform",
+            "coverage": "ceil_0.6K",
+            "delta": 0.0,
+            "noise": "gaussian",
+            "background_overlap": "none",
+            "background_effect": 0.0,
+            "cell_number_rule": "NONINFORMATIVE_FIXED_LAYOUT",
+            "donor_factor": "NOISE_FAMILY",
+            "planned_replicates": 5000
+          }
+        },
+        {
+          "bias": {
+            "mcse": 0.0005800388388364747,
+            "mean": 0.0009463534718279243,
+            "n": 5000
+          },
+          "ci_length": {
+            "mcse": 5.619146951143071e-05,
+            "mean": 0.1624024511370229,
+            "n": 5000
+          },
+          "coverage": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.003064625262572956,
+            "mean": 0.950599999999998,
+            "n": 5000,
+            "wilson95": [
+              0.9442398676450816,
+              0.956268279362033
+            ]
+          },
+          "failure_fraction": 0.0,
+          "failure_reasons": {},
+          "mean_squared_error": {
+            "mcse": 3.3181744378511616e-05,
+            "mean": 0.0016827844126329093,
+            "n": 5000
+          },
+          "method": "CELL_NAIVE_WELCH",
+          "module_id": "M1",
+          "n_failed": 0,
+          "n_generated": 5000,
+          "n_valid": 5000,
+          "power_matching_target": {
+            "applicability": "NOT_APPLICABLE_NO_ELIGIBLE_VALID_REPLICATES",
+            "mcse": null,
+            "mean": null,
+            "n": 0,
+            "wilson95": null
+          },
+          "rejection_fields_repeated_across_target_rows_not_independent": true,
+          "rejection_matching_target": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.003064625262572895,
+            "mean": 0.049399999999999916,
+            "n": 5000,
+            "wilson95": [
+              0.04373172063796704,
+              0.055760132354918446
+            ]
+          },
+          "rmse": 0.041021755357772166,
+          "rmse_mcse_delta_method": 0.0004044408154784733,
+          "scenario_id": "A080",
+          "sign_correct": {
+            "applicability": "NOT_APPLICABLE_NO_ELIGIBLE_VALID_REPLICATES",
+            "mcse": null,
+            "mean": null,
+            "n": 0,
+            "wilson95": null
+          },
+          "target": "theta_D_full",
+          "type_I_error_matching_target": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.003064625262572895,
+            "mean": 0.049399999999999916,
+            "n": 5000,
+            "wilson95": [
+              0.04373172063796704,
+              0.055760132354918446
+            ]
+          },
+          "scenario_parameters": {
+            "status": "FROZEN_MAIN_NOT_EXECUTED",
+            "module_sizes": [
+              5,
+              11,
+              16,
+              17
+            ],
+            "module_membership": "VIRTUAL_DISJOINT",
+            "gamma": 0.2,
+            "mask_policy": "INDEPENDENT_RANDOM_SUBSET_PER_REPLICATE",
+            "delta_applies_to": "MODULE_1_FULL_DONOR_TARGET",
+            "scenario_id": "A080",
+            "block": "A",
+            "n_per_group": 12,
+            "rho": 0.0,
+            "layout": "cycle5_20_80",
+            "signal_structure": "uniform",
+            "coverage": "full",
+            "delta": 0.0,
+            "noise": "gaussian",
+            "background_overlap": "none",
+            "background_effect": 0.0,
+            "cell_number_rule": "NONINFORMATIVE_FIXED_LAYOUT",
+            "donor_factor": "NOISE_FAMILY",
+            "planned_replicates": 5000
+          }
+        },
+        {
+          "bias": {
+            "mcse": 0.0006578567056145274,
+            "mean": 0.0012651620343957807,
+            "n": 5000
+          },
+          "ci_length": {
+            "mcse": 6.425517875374754e-05,
+            "mean": 0.1851287537705749,
+            "n": 5000
+          },
+          "coverage": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.002993025225419931,
+            "mean": 0.9529999999999998,
+            "n": 5000,
+            "wilson95": [
+              0.946777958205572,
+              0.9585265038322062
+            ]
+          },
+          "failure_fraction": 0.0,
+          "failure_reasons": {},
+          "mean_squared_error": {
+            "mcse": 4.231069380155531e-05,
+            "mean": 0.002165045085138152,
+            "n": 5000
+          },
+          "method": "CELL_NAIVE_WELCH",
+          "module_id": "M1",
+          "n_failed": 0,
+          "n_generated": 5000,
+          "n_valid": 5000,
+          "power_matching_target": {
+            "applicability": "NOT_APPLICABLE_NO_ELIGIBLE_VALID_REPLICATES",
+            "mcse": null,
+            "mean": null,
+            "n": 0,
+            "wilson95": null
+          },
+          "rejection_fields_repeated_across_target_rows_not_independent": true,
+          "rejection_matching_target": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.0029930252254199343,
+            "mean": 0.04700000000000026,
+            "n": 5000,
+            "wilson95": [
+              0.04147349616779377,
+              0.053222041794428
+            ]
+          },
+          "rmse": 0.04653004497244927,
+          "rmse_mcse_delta_method": 0.0004546599280809607,
+          "scenario_id": "A084",
+          "sign_correct": {
+            "applicability": "NOT_APPLICABLE_NO_ELIGIBLE_VALID_REPLICATES",
+            "mcse": null,
+            "mean": null,
+            "n": 0,
+            "wilson95": null
+          },
+          "target": "theta_D_full",
+          "type_I_error_matching_target": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.0029930252254199343,
+            "mean": 0.04700000000000026,
+            "n": 5000,
+            "wilson95": [
+              0.04147349616779377,
+              0.053222041794428
+            ]
+          },
+          "scenario_parameters": {
+            "status": "FROZEN_MAIN_NOT_EXECUTED",
+            "module_sizes": [
+              5,
+              11,
+              16,
+              17
+            ],
+            "module_membership": "VIRTUAL_DISJOINT",
+            "gamma": 0.2,
+            "mask_policy": "INDEPENDENT_RANDOM_SUBSET_PER_REPLICATE",
+            "delta_applies_to": "MODULE_1_FULL_DONOR_TARGET",
+            "scenario_id": "A084",
+            "block": "A",
+            "n_per_group": 12,
+            "rho": 0.0,
+            "layout": "cycle5_20_80",
+            "signal_structure": "uniform",
+            "coverage": "ceil_0.6K",
+            "delta": 0.0,
+            "noise": "gaussian",
+            "background_overlap": "none",
+            "background_effect": 0.0,
+            "cell_number_rule": "NONINFORMATIVE_FIXED_LAYOUT",
+            "donor_factor": "NOISE_FAMILY",
+            "planned_replicates": 5000
+          }
+        },
+        {
+          "bias": {
+            "mcse": 0.005034424216307672,
+            "mean": -0.00305206117676292,
+            "n": 5000
+          },
+          "ci_length": {
+            "mcse": 0.0003354874546166968,
+            "mean": 0.21148447716055838,
+            "n": 5000
+          },
+          "coverage": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.005947837253994095,
+            "mean": 0.22960000000000008,
+            "n": 5000,
+            "wilson95": [
+              0.21815266660552562,
+              0.24146250660636132
+            ]
+          },
+          "failure_fraction": 0.0,
+          "failure_reasons": {},
+          "mean_squared_error": {
+            "mcse": 0.002481821020871558,
+            "mean": 0.12671110559896312,
+            "n": 5000
+          },
+          "method": "CELL_NAIVE_WELCH",
+          "module_id": "M1",
+          "n_failed": 0,
+          "n_generated": 5000,
+          "n_valid": 5000,
+          "power_matching_target": {
+            "applicability": "NOT_APPLICABLE_NO_ELIGIBLE_VALID_REPLICATES",
+            "mcse": null,
+            "mean": null,
+            "n": 0,
+            "wilson95": null
+          },
+          "rejection_fields_repeated_across_target_rows_not_independent": true,
+          "rejection_matching_target": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.005947837253994109,
+            "mean": 0.7703999999999983,
+            "n": 5000,
+            "wilson95": [
+              0.7585374933936386,
+              0.7818473333944744
+            ]
+          },
+          "rmse": 0.3559650342364586,
+          "rmse_mcse_delta_method": 0.0034860460749958754,
+          "scenario_id": "A112",
+          "sign_correct": {
+            "applicability": "NOT_APPLICABLE_NO_ELIGIBLE_VALID_REPLICATES",
+            "mcse": null,
+            "mean": null,
+            "n": 0,
+            "wilson95": null
+          },
+          "target": "theta_D_full",
+          "type_I_error_matching_target": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.005947837253994109,
+            "mean": 0.7703999999999983,
+            "n": 5000,
+            "wilson95": [
+              0.7585374933936386,
+              0.7818473333944744
+            ]
+          },
+          "scenario_parameters": {
+            "status": "FROZEN_MAIN_NOT_EXECUTED",
+            "module_sizes": [
+              5,
+              11,
+              16,
+              17
+            ],
+            "module_membership": "VIRTUAL_DISJOINT",
+            "gamma": 0.2,
+            "mask_policy": "INDEPENDENT_RANDOM_SUBSET_PER_REPLICATE",
+            "delta_applies_to": "MODULE_1_FULL_DONOR_TARGET",
+            "scenario_id": "A112",
+            "block": "A",
+            "n_per_group": 12,
+            "rho": 0.4,
+            "layout": "cycle5_20_80",
+            "signal_structure": "uniform",
+            "coverage": "full",
+            "delta": 0.0,
+            "noise": "gaussian",
+            "background_overlap": "none",
+            "background_effect": 0.0,
+            "cell_number_rule": "NONINFORMATIVE_FIXED_LAYOUT",
+            "donor_factor": "NOISE_FAMILY",
+            "planned_replicates": 5000
+          }
+        },
+        {
+          "bias": {
+            "mcse": 0.004933146699039713,
+            "mean": 0.0014903807359636359,
+            "n": 5000
+          },
+          "ci_length": {
+            "mcse": 0.0003319736421563592,
+            "mean": 0.22110069109283584,
+            "n": 5000
+          },
+          "coverage": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.006165597456856878,
+            "mean": 0.2551999999999999,
+            "n": 5000,
+            "wilson95": [
+              0.2433067621323737,
+              0.2674691047399263
+            ]
+          },
+          "failure_fraction": 0.0,
+          "failure_reasons": {},
+          "mean_squared_error": {
+            "mcse": 0.0024186969968489056,
+            "mean": 0.12165756706961574,
+            "n": 5000
+          },
+          "method": "CELL_NAIVE_WELCH",
+          "module_id": "M1",
+          "n_failed": 0,
+          "n_generated": 5000,
+          "n_valid": 5000,
+          "power_matching_target": {
+            "applicability": "NOT_APPLICABLE_NO_ELIGIBLE_VALID_REPLICATES",
+            "mcse": null,
+            "mean": null,
+            "n": 0,
+            "wilson95": null
+          },
+          "rejection_fields_repeated_across_target_rows_not_independent": true,
+          "rejection_matching_target": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.006165597456856866,
+            "mean": 0.7448000000000016,
+            "n": 5000,
+            "wilson95": [
+              0.7325308952600738,
+              0.7566932378676263
+            ]
+          },
+          "rmse": 0.34879444816340716,
+          "rmse_mcse_delta_method": 0.0034672240478377213,
+          "scenario_id": "A116",
+          "sign_correct": {
+            "applicability": "NOT_APPLICABLE_NO_ELIGIBLE_VALID_REPLICATES",
+            "mcse": null,
+            "mean": null,
+            "n": 0,
+            "wilson95": null
+          },
+          "target": "theta_D_full",
+          "type_I_error_matching_target": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.006165597456856866,
+            "mean": 0.7448000000000016,
+            "n": 5000,
+            "wilson95": [
+              0.7325308952600738,
+              0.7566932378676263
+            ]
+          },
+          "scenario_parameters": {
+            "status": "FROZEN_MAIN_NOT_EXECUTED",
+            "module_sizes": [
+              5,
+              11,
+              16,
+              17
+            ],
+            "module_membership": "VIRTUAL_DISJOINT",
+            "gamma": 0.2,
+            "mask_policy": "INDEPENDENT_RANDOM_SUBSET_PER_REPLICATE",
+            "delta_applies_to": "MODULE_1_FULL_DONOR_TARGET",
+            "scenario_id": "A116",
+            "block": "A",
+            "n_per_group": 12,
+            "rho": 0.4,
+            "layout": "cycle5_20_80",
+            "signal_structure": "uniform",
+            "coverage": "ceil_0.6K",
+            "delta": 0.0,
+            "noise": "gaussian",
+            "background_overlap": "none",
+            "background_effect": 0.0,
+            "cell_number_rule": "NONINFORMATIVE_FIXED_LAYOUT",
+            "donor_factor": "NOISE_FAMILY",
+            "planned_replicates": 5000
+          }
+        },
+        {
+          "bias": {
+            "mcse": 0.002075127260074702,
+            "mean": -0.0006376017949572178,
+            "n": 5000
+          },
+          "ci_length": {
+            "mcse": 0.003649118436422101,
+            "mean": 0.7252401355992761,
+            "n": 5000
+          },
+          "coverage": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.0024202462684610776,
+            "mean": 0.9698000000000012,
+            "n": 5000,
+            "wilson95": [
+              0.9646838626619504,
+              0.9741948045904739
+            ]
+          },
+          "failure_fraction": 0.0,
+          "failure_reasons": {},
+          "mean_squared_error": {
+            "mcse": 0.00044214656016301486,
+            "mean": 0.0215268661104291,
+            "n": 5000
+          },
+          "method": "DONOR_MEAN_WELCH",
+          "module_id": "M1",
+          "n_failed": 0,
+          "n_generated": 5000,
+          "n_valid": 5000,
+          "power_matching_target": {
+            "applicability": "NOT_APPLICABLE_NO_ELIGIBLE_VALID_REPLICATES",
+            "mcse": null,
+            "mean": null,
+            "n": 0,
+            "wilson95": null
+          },
+          "rejection_fields_repeated_across_target_rows_not_independent": true,
+          "rejection_matching_target": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.002420246268461126,
+            "mean": 0.03020000000000003,
+            "n": 5000,
+            "wilson95": [
+              0.025805195409526097,
+              0.035316137338049586
+            ]
+          },
+          "rmse": 0.1467203670607087,
+          "rmse_mcse_delta_method": 0.001506766132816677,
+          "scenario_id": "A016",
+          "sign_correct": {
+            "applicability": "NOT_APPLICABLE_NO_ELIGIBLE_VALID_REPLICATES",
+            "mcse": null,
+            "mean": null,
+            "n": 0,
+            "wilson95": null
+          },
+          "target": "theta_D_full",
+          "type_I_error_matching_target": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.002420246268461126,
+            "mean": 0.03020000000000003,
+            "n": 5000,
+            "wilson95": [
+              0.025805195409526097,
+              0.035316137338049586
+            ]
+          },
+          "scenario_parameters": {
+            "status": "FROZEN_MAIN_NOT_EXECUTED",
+            "module_sizes": [
+              5,
+              11,
+              16,
+              17
+            ],
+            "module_membership": "VIRTUAL_DISJOINT",
+            "gamma": 0.2,
+            "mask_policy": "INDEPENDENT_RANDOM_SUBSET_PER_REPLICATE",
+            "delta_applies_to": "MODULE_1_FULL_DONOR_TARGET",
+            "scenario_id": "A016",
+            "block": "A",
+            "n_per_group": 4,
+            "rho": 0.0,
+            "layout": "cycle5_20_80",
+            "signal_structure": "uniform",
+            "coverage": "full",
+            "delta": 0.0,
+            "noise": "gaussian",
+            "background_overlap": "none",
+            "background_effect": 0.0,
+            "cell_number_rule": "NONINFORMATIVE_FIXED_LAYOUT",
+            "donor_factor": "NOISE_FAMILY",
+            "planned_replicates": 5000
+          }
+        },
+        {
+          "bias": {
+            "mcse": 0.002335394275023232,
+            "mean": -0.0004910637764270198,
+            "n": 5000
+          },
+          "ci_length": {
+            "mcse": 0.004047587597126143,
+            "mean": 0.8177757961250768,
+            "n": 5000
+          },
+          "coverage": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.002349188796159258,
+            "mean": 0.971599999999999,
+            "n": 5000,
+            "wilson95": [
+              0.9666211762120761,
+              0.9758547273133461
+            ]
+          },
+          "failure_fraction": 0.0,
+          "failure_reasons": {},
+          "mean_squared_error": {
+            "mcse": 0.0005281792634315103,
+            "mean": 0.02726511917626911,
+            "n": 5000
+          },
+          "method": "DONOR_MEAN_WELCH",
+          "module_id": "M1",
+          "n_failed": 0,
+          "n_generated": 5000,
+          "n_valid": 5000,
+          "power_matching_target": {
+            "applicability": "NOT_APPLICABLE_NO_ELIGIBLE_VALID_REPLICATES",
+            "mcse": null,
+            "mean": null,
+            "n": 0,
+            "wilson95": null
+          },
+          "rejection_fields_repeated_across_target_rows_not_independent": true,
+          "rejection_matching_target": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.0023491887961592183,
+            "mean": 0.028399999999999984,
+            "n": 5000,
+            "wilson95": [
+              0.024145272686653948,
+              0.03337882378792394
+            ]
+          },
+          "rmse": 0.16512152850633716,
+          "rmse_mcse_delta_method": 0.0015993652318063401,
+          "scenario_id": "A020",
+          "sign_correct": {
+            "applicability": "NOT_APPLICABLE_NO_ELIGIBLE_VALID_REPLICATES",
+            "mcse": null,
+            "mean": null,
+            "n": 0,
+            "wilson95": null
+          },
+          "target": "theta_D_full",
+          "type_I_error_matching_target": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.0023491887961592183,
+            "mean": 0.028399999999999984,
+            "n": 5000,
+            "wilson95": [
+              0.024145272686653948,
+              0.03337882378792394
+            ]
+          },
+          "scenario_parameters": {
+            "status": "FROZEN_MAIN_NOT_EXECUTED",
+            "module_sizes": [
+              5,
+              11,
+              16,
+              17
+            ],
+            "module_membership": "VIRTUAL_DISJOINT",
+            "gamma": 0.2,
+            "mask_policy": "INDEPENDENT_RANDOM_SUBSET_PER_REPLICATE",
+            "delta_applies_to": "MODULE_1_FULL_DONOR_TARGET",
+            "scenario_id": "A020",
+            "block": "A",
+            "n_per_group": 4,
+            "rho": 0.0,
+            "layout": "cycle5_20_80",
+            "signal_structure": "uniform",
+            "coverage": "ceil_0.6K",
+            "delta": 0.0,
+            "noise": "gaussian",
+            "background_overlap": "none",
+            "background_effect": 0.0,
+            "cell_number_rule": "NONINFORMATIVE_FIXED_LAYOUT",
+            "donor_factor": "NOISE_FAMILY",
+            "planned_replicates": 5000
+          }
+        },
+        {
+          "bias": {
+            "mcse": 0.006574471827526423,
+            "mean": 0.00453694694035895,
+            "n": 5000
+          },
+          "ci_length": {
+            "mcse": 0.009940268173493347,
+            "mean": 2.3232374235090854,
+            "n": 5000
+          },
+          "coverage": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.002710747498384917,
+            "mean": 0.9617999999999995,
+            "n": 5000,
+            "wilson95": [
+              0.9561227277633483,
+              0.9667682227201971
+            ]
+          },
+          "failure_fraction": 0.0,
+          "failure_reasons": {},
+          "mean_squared_error": {
+            "mcse": 0.004281271883980674,
+            "mean": 0.21609575926242272,
+            "n": 5000
+          },
+          "method": "DONOR_MEAN_WELCH",
+          "module_id": "M1",
+          "n_failed": 0,
+          "n_generated": 5000,
+          "n_valid": 5000,
+          "power_matching_target": {
+            "applicability": "NOT_APPLICABLE_NO_ELIGIBLE_VALID_REPLICATES",
+            "mcse": null,
+            "mean": null,
+            "n": 0,
+            "wilson95": null
+          },
+          "rejection_fields_repeated_across_target_rows_not_independent": true,
+          "rejection_matching_target": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.0027107474983848997,
+            "mean": 0.03819999999999996,
+            "n": 5000,
+            "wilson95": [
+              0.033231777279803,
+              0.04387727223665177
+            ]
+          },
+          "rmse": 0.4648610106928981,
+          "rmse_mcse_delta_method": 0.004604894565796375,
+          "scenario_id": "A048",
+          "sign_correct": {
+            "applicability": "NOT_APPLICABLE_NO_ELIGIBLE_VALID_REPLICATES",
+            "mcse": null,
+            "mean": null,
+            "n": 0,
+            "wilson95": null
+          },
+          "target": "theta_D_full",
+          "type_I_error_matching_target": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.0027107474983848997,
+            "mean": 0.03819999999999996,
+            "n": 5000,
+            "wilson95": [
+              0.033231777279803,
+              0.04387727223665177
+            ]
+          },
+          "scenario_parameters": {
+            "status": "FROZEN_MAIN_NOT_EXECUTED",
+            "module_sizes": [
+              5,
+              11,
+              16,
+              17
+            ],
+            "module_membership": "VIRTUAL_DISJOINT",
+            "gamma": 0.2,
+            "mask_policy": "INDEPENDENT_RANDOM_SUBSET_PER_REPLICATE",
+            "delta_applies_to": "MODULE_1_FULL_DONOR_TARGET",
+            "scenario_id": "A048",
+            "block": "A",
+            "n_per_group": 4,
+            "rho": 0.4,
+            "layout": "cycle5_20_80",
+            "signal_structure": "uniform",
+            "coverage": "full",
+            "delta": 0.0,
+            "noise": "gaussian",
+            "background_overlap": "none",
+            "background_effect": 0.0,
+            "cell_number_rule": "NONINFORMATIVE_FIXED_LAYOUT",
+            "donor_factor": "NOISE_FAMILY",
+            "planned_replicates": 5000
+          }
+        },
+        {
+          "bias": {
+            "mcse": 0.0066019740931391,
+            "mean": 0.0006239159584945359,
+            "n": 5000
+          },
+          "ci_length": {
+            "mcse": 0.01006888959504131,
+            "mean": 2.3578041234278913,
+            "n": 5000
+          },
+          "coverage": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.0028432080472592645,
+            "mean": 0.9578000000000009,
+            "n": 5000,
+            "wilson95": [
+              0.951867024068152,
+              0.9630300680309537
+            ]
+          },
+          "failure_fraction": 0.0,
+          "failure_reasons": {},
+          "mean_squared_error": {
+            "mcse": 0.0044742706804017365,
+            "mean": 0.21788711284159581,
+            "n": 5000
+          },
+          "method": "DONOR_MEAN_WELCH",
+          "module_id": "M1",
+          "n_failed": 0,
+          "n_generated": 5000,
+          "n_valid": 5000,
+          "power_matching_target": {
+            "applicability": "NOT_APPLICABLE_NO_ELIGIBLE_VALID_REPLICATES",
+            "mcse": null,
+            "mean": null,
+            "n": 0,
+            "wilson95": null
+          },
+          "rejection_fields_repeated_across_target_rows_not_independent": true,
+          "rejection_matching_target": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.0028432080472592914,
+            "mean": 0.04219999999999996,
+            "n": 5000,
+            "wilson95": [
+              0.03696993196904638,
+              0.04813297593184793
+            ]
+          },
+          "rmse": 0.4667837966785006,
+          "rmse_mcse_delta_method": 0.004792658520110768,
+          "scenario_id": "A052",
+          "sign_correct": {
+            "applicability": "NOT_APPLICABLE_NO_ELIGIBLE_VALID_REPLICATES",
+            "mcse": null,
+            "mean": null,
+            "n": 0,
+            "wilson95": null
+          },
+          "target": "theta_D_full",
+          "type_I_error_matching_target": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.0028432080472592914,
+            "mean": 0.04219999999999996,
+            "n": 5000,
+            "wilson95": [
+              0.03696993196904638,
+              0.04813297593184793
+            ]
+          },
+          "scenario_parameters": {
+            "status": "FROZEN_MAIN_NOT_EXECUTED",
+            "module_sizes": [
+              5,
+              11,
+              16,
+              17
+            ],
+            "module_membership": "VIRTUAL_DISJOINT",
+            "gamma": 0.2,
+            "mask_policy": "INDEPENDENT_RANDOM_SUBSET_PER_REPLICATE",
+            "delta_applies_to": "MODULE_1_FULL_DONOR_TARGET",
+            "scenario_id": "A052",
+            "block": "A",
+            "n_per_group": 4,
+            "rho": 0.4,
+            "layout": "cycle5_20_80",
+            "signal_structure": "uniform",
+            "coverage": "ceil_0.6K",
+            "delta": 0.0,
+            "noise": "gaussian",
+            "background_overlap": "none",
+            "background_effect": 0.0,
+            "cell_number_rule": "NONINFORMATIVE_FIXED_LAYOUT",
+            "donor_factor": "NOISE_FAMILY",
+            "planned_replicates": 5000
+          }
+        },
+        {
+          "bias": {
+            "mcse": 0.0010317560292691266,
+            "mean": -0.00012565027397222183,
+            "n": 5000
+          },
+          "ci_length": {
+            "mcse": 0.0008433281024371479,
+            "mean": 0.2973763061296444,
+            "n": 5000
+          },
+          "coverage": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.0028560546213264085,
+            "mean": 0.9574000000000004,
+            "n": 5000,
+            "wilson95": [
+              0.9514422309563567,
+              0.9626554753043052
+            ]
+          },
+          "failure_fraction": 0.0,
+          "failure_reasons": {},
+          "mean_squared_error": {
+            "mcse": 0.00010527193966968518,
+            "mean": 0.005321553787153376,
+            "n": 5000
+          },
+          "method": "DONOR_MEAN_WELCH",
+          "module_id": "M1",
+          "n_failed": 0,
+          "n_generated": 5000,
+          "n_valid": 5000,
+          "power_matching_target": {
+            "applicability": "NOT_APPLICABLE_NO_ELIGIBLE_VALID_REPLICATES",
+            "mcse": null,
+            "mean": null,
+            "n": 0,
+            "wilson95": null
+          },
+          "rejection_fields_repeated_across_target_rows_not_independent": true,
+          "rejection_matching_target": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.002856054621326421,
+            "mean": 0.04260000000000003,
+            "n": 5000,
+            "wilson95": [
+              0.03734452469569485,
+              0.04855776904364341
+            ]
+          },
+          "rmse": 0.07294898071360131,
+          "rmse_mcse_delta_method": 0.0007215449663579553,
+          "scenario_id": "A080",
+          "sign_correct": {
+            "applicability": "NOT_APPLICABLE_NO_ELIGIBLE_VALID_REPLICATES",
+            "mcse": null,
+            "mean": null,
+            "n": 0,
+            "wilson95": null
+          },
+          "target": "theta_D_full",
+          "type_I_error_matching_target": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.002856054621326421,
+            "mean": 0.04260000000000003,
+            "n": 5000,
+            "wilson95": [
+              0.03734452469569485,
+              0.04855776904364341
+            ]
+          },
+          "scenario_parameters": {
+            "status": "FROZEN_MAIN_NOT_EXECUTED",
+            "module_sizes": [
+              5,
+              11,
+              16,
+              17
+            ],
+            "module_membership": "VIRTUAL_DISJOINT",
+            "gamma": 0.2,
+            "mask_policy": "INDEPENDENT_RANDOM_SUBSET_PER_REPLICATE",
+            "delta_applies_to": "MODULE_1_FULL_DONOR_TARGET",
+            "scenario_id": "A080",
+            "block": "A",
+            "n_per_group": 12,
+            "rho": 0.0,
+            "layout": "cycle5_20_80",
+            "signal_structure": "uniform",
+            "coverage": "full",
+            "delta": 0.0,
+            "noise": "gaussian",
+            "background_overlap": "none",
+            "background_effect": 0.0,
+            "cell_number_rule": "NONINFORMATIVE_FIXED_LAYOUT",
+            "donor_factor": "NOISE_FAMILY",
+            "planned_replicates": 5000
+          }
+        },
+        {
+          "bias": {
+            "mcse": 0.0011536021644973932,
+            "mean": 7.601195553391763e-05,
+            "n": 5000
+          },
+          "ci_length": {
+            "mcse": 0.0009455051848520728,
+            "mean": 0.3364935563886814,
+            "n": 5000
+          },
+          "coverage": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.002950275919299728,
+            "mean": 0.9544000000000008,
+            "n": 5000,
+            "wilson95": [
+              0.9482604246805078,
+              0.9598418877918244
+            ]
+          },
+          "failure_fraction": 0.0,
+          "failure_reasons": {},
+          "mean_squared_error": {
+            "mcse": 0.00013676100233374323,
+            "mean": 0.006652664749528787,
+            "n": 5000
+          },
+          "method": "DONOR_MEAN_WELCH",
+          "module_id": "M1",
+          "n_failed": 0,
+          "n_generated": 5000,
+          "n_valid": 5000,
+          "power_matching_target": {
+            "applicability": "NOT_APPLICABLE_NO_ELIGIBLE_VALID_REPLICATES",
+            "mcse": null,
+            "mean": null,
+            "n": 0,
+            "wilson95": null
+          },
+          "rejection_fields_repeated_across_target_rows_not_independent": true,
+          "rejection_matching_target": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.0029502759192997527,
+            "mean": 0.04560000000000001,
+            "n": 5000,
+            "wilson95": [
+              0.040158112208175674,
+              0.051739575319492255
+            ]
+          },
+          "rmse": 0.08156386914270795,
+          "rmse_mcse_delta_method": 0.0008383675503087022,
+          "scenario_id": "A084",
+          "sign_correct": {
+            "applicability": "NOT_APPLICABLE_NO_ELIGIBLE_VALID_REPLICATES",
+            "mcse": null,
+            "mean": null,
+            "n": 0,
+            "wilson95": null
+          },
+          "target": "theta_D_full",
+          "type_I_error_matching_target": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.0029502759192997527,
+            "mean": 0.04560000000000001,
+            "n": 5000,
+            "wilson95": [
+              0.040158112208175674,
+              0.051739575319492255
+            ]
+          },
+          "scenario_parameters": {
+            "status": "FROZEN_MAIN_NOT_EXECUTED",
+            "module_sizes": [
+              5,
+              11,
+              16,
+              17
+            ],
+            "module_membership": "VIRTUAL_DISJOINT",
+            "gamma": 0.2,
+            "mask_policy": "INDEPENDENT_RANDOM_SUBSET_PER_REPLICATE",
+            "delta_applies_to": "MODULE_1_FULL_DONOR_TARGET",
+            "scenario_id": "A084",
+            "block": "A",
+            "n_per_group": 12,
+            "rho": 0.0,
+            "layout": "cycle5_20_80",
+            "signal_structure": "uniform",
+            "coverage": "ceil_0.6K",
+            "delta": 0.0,
+            "noise": "gaussian",
+            "background_overlap": "none",
+            "background_effect": 0.0,
+            "cell_number_rule": "NONINFORMATIVE_FIXED_LAYOUT",
+            "donor_factor": "NOISE_FAMILY",
+            "planned_replicates": 5000
+          }
+        },
+        {
+          "bias": {
+            "mcse": 0.003765204857197476,
+            "mean": -0.0033434164206580545,
+            "n": 5000
+          },
+          "ci_length": {
+            "mcse": 0.002350950076095543,
+            "mean": 1.0961248889202433,
+            "n": 5000
+          },
+          "coverage": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.0030051036587778464,
+            "mean": 0.9526,
+            "n": 5000,
+            "wilson95": [
+              0.946354660519909,
+              0.9581504156794253
+            ]
+          },
+          "failure_fraction": 0.0,
+          "failure_reasons": {},
+          "mean_squared_error": {
+            "mcse": 0.0013834738581139172,
+            "mean": 0.07088083974906237,
+            "n": 5000
+          },
+          "method": "DONOR_MEAN_WELCH",
+          "module_id": "M1",
+          "n_failed": 0,
+          "n_generated": 5000,
+          "n_valid": 5000,
+          "power_matching_target": {
+            "applicability": "NOT_APPLICABLE_NO_ELIGIBLE_VALID_REPLICATES",
+            "mcse": null,
+            "mean": null,
+            "n": 0,
+            "wilson95": null
+          },
+          "rejection_fields_repeated_across_target_rows_not_independent": true,
+          "rejection_matching_target": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.0030051036587778477,
+            "mean": 0.04740000000000004,
+            "n": 5000,
+            "wilson95": [
+              0.04184958432057469,
+              0.05364533948009102
+            ]
+          },
+          "rmse": 0.2662345577663846,
+          "rmse_mcse_delta_method": 0.0025982236673570518,
+          "scenario_id": "A112",
+          "sign_correct": {
+            "applicability": "NOT_APPLICABLE_NO_ELIGIBLE_VALID_REPLICATES",
+            "mcse": null,
+            "mean": null,
+            "n": 0,
+            "wilson95": null
+          },
+          "target": "theta_D_full",
+          "type_I_error_matching_target": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.0030051036587778477,
+            "mean": 0.04740000000000004,
+            "n": 5000,
+            "wilson95": [
+              0.04184958432057469,
+              0.05364533948009102
+            ]
+          },
+          "scenario_parameters": {
+            "status": "FROZEN_MAIN_NOT_EXECUTED",
+            "module_sizes": [
+              5,
+              11,
+              16,
+              17
+            ],
+            "module_membership": "VIRTUAL_DISJOINT",
+            "gamma": 0.2,
+            "mask_policy": "INDEPENDENT_RANDOM_SUBSET_PER_REPLICATE",
+            "delta_applies_to": "MODULE_1_FULL_DONOR_TARGET",
+            "scenario_id": "A112",
+            "block": "A",
+            "n_per_group": 12,
+            "rho": 0.4,
+            "layout": "cycle5_20_80",
+            "signal_structure": "uniform",
+            "coverage": "full",
+            "delta": 0.0,
+            "noise": "gaussian",
+            "background_overlap": "none",
+            "background_effect": 0.0,
+            "cell_number_rule": "NONINFORMATIVE_FIXED_LAYOUT",
+            "donor_factor": "NOISE_FAMILY",
+            "planned_replicates": 5000
+          }
+        },
+        {
+          "bias": {
+            "mcse": 0.003719304308565881,
+            "mean": -0.002940965501394161,
+            "n": 5000
+          },
+          "ci_length": {
+            "mcse": 0.0023953190699224584,
+            "mean": 1.1032250688697334,
+            "n": 5000
+          },
+          "coverage": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.002906763148245801,
+            "mean": 0.9558000000000009,
+            "n": 5000,
+            "wilson95": [
+              0.9497443776640049,
+              0.9611557852428811
+            ]
+          },
+          "failure_fraction": 0.0,
+          "failure_reasons": {},
+          "mean_squared_error": {
+            "mcse": 0.00134502194185264,
+            "mean": 0.0691609387521248,
+            "n": 5000
+          },
+          "method": "DONOR_MEAN_WELCH",
+          "module_id": "M1",
+          "n_failed": 0,
+          "n_generated": 5000,
+          "n_valid": 5000,
+          "power_matching_target": {
+            "applicability": "NOT_APPLICABLE_NO_ELIGIBLE_VALID_REPLICATES",
+            "mcse": null,
+            "mean": null,
+            "n": 0,
+            "wilson95": null
+          },
+          "rejection_fields_repeated_across_target_rows_not_independent": true,
+          "rejection_matching_target": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.002906763148245827,
+            "mean": 0.04419999999999996,
+            "n": 5000,
+            "wilson95": [
+              0.03884421475711896,
+              0.05025562233599513
+            ]
+          },
+          "rmse": 0.26298467398714476,
+          "rmse_mcse_delta_method": 0.0025572249543302046,
+          "scenario_id": "A116",
+          "sign_correct": {
+            "applicability": "NOT_APPLICABLE_NO_ELIGIBLE_VALID_REPLICATES",
+            "mcse": null,
+            "mean": null,
+            "n": 0,
+            "wilson95": null
+          },
+          "target": "theta_D_full",
+          "type_I_error_matching_target": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.002906763148245827,
+            "mean": 0.04419999999999996,
+            "n": 5000,
+            "wilson95": [
+              0.03884421475711896,
+              0.05025562233599513
+            ]
+          },
+          "scenario_parameters": {
+            "status": "FROZEN_MAIN_NOT_EXECUTED",
+            "module_sizes": [
+              5,
+              11,
+              16,
+              17
+            ],
+            "module_membership": "VIRTUAL_DISJOINT",
+            "gamma": 0.2,
+            "mask_policy": "INDEPENDENT_RANDOM_SUBSET_PER_REPLICATE",
+            "delta_applies_to": "MODULE_1_FULL_DONOR_TARGET",
+            "scenario_id": "A116",
+            "block": "A",
+            "n_per_group": 12,
+            "rho": 0.4,
+            "layout": "cycle5_20_80",
+            "signal_structure": "uniform",
+            "coverage": "ceil_0.6K",
+            "delta": 0.0,
+            "noise": "gaussian",
+            "background_overlap": "none",
+            "background_effect": 0.0,
+            "cell_number_rule": "NONINFORMATIVE_FIXED_LAYOUT",
+            "donor_factor": "NOISE_FAMILY",
+            "planned_replicates": 5000
+          }
+        }
+      ],
+      "note": "",
+      "uncertainty": "WILSON95_MC"
+    },
+    {
+      "panel_id": "b",
+      "selection": {
+        "id": "FIG2_PRIMARY_NULL",
+        "module": "M1",
+        "targets": [
+          "theta_D_full",
+          "matching_target"
+        ],
+        "where": {
+          "block": "A",
+          "layout": "cycle5_20_80",
+          "signal_structure": "uniform",
+          "delta": 0.0,
+          "noise": "gaussian"
+        },
+        "vary": [
+          "n_per_group",
+          "rho",
+          "coverage"
+        ],
+        "metrics": [
+          "coverage",
+          "type_I_error_matching_target",
+          "fdr"
+        ],
+        "scenario_ids": [
+          "A016",
+          "A020",
+          "A048",
+          "A052",
+          "A080",
+          "A084",
+          "A112",
+          "A116"
+        ]
+      },
+      "frozen_rule_id": "FIG2_PRIMARY_NULL",
+      "scenario_ids": [
+        "A016",
+        "A020",
+        "A048",
+        "A052",
+        "A080",
+        "A084",
+        "A112",
+        "A116"
+      ],
+      "module_ids": [
+        "M1"
+      ],
+      "target": "MATCHING_METHOD_TARGET",
+      "metric": "type_I_error_matching_target",
+      "rows": [
+        {
+          "bias": {
+            "mcse": 0.0011577274952063808,
+            "mean": -0.0009051892490399955,
+            "n": 5000
+          },
+          "ci_length": {
+            "mcse": 0.00021851425935180582,
+            "mean": 0.31839277957836487,
+            "n": 5000
+          },
+          "coverage": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.003251584229264217,
+            "mean": 0.9440000000000013,
+            "n": 5000,
+            "wilson95": [
+              0.9372794866675994,
+              0.9500387940051899
+            ]
+          },
+          "failure_fraction": 0.0,
+          "failure_reasons": {},
+          "mean_squared_error": {
+            "mcse": 0.00013483241888886997,
+            "mean": 0.006701143800407656,
+            "n": 5000
+          },
+          "method": "CELL_NAIVE_WELCH",
+          "module_id": "M1",
+          "n_failed": 0,
+          "n_generated": 5000,
+          "n_valid": 5000,
+          "power_matching_target": {
+            "applicability": "NOT_APPLICABLE_NO_ELIGIBLE_VALID_REPLICATES",
+            "mcse": null,
+            "mean": null,
+            "n": 0,
+            "wilson95": null
+          },
+          "rejection_fields_repeated_across_target_rows_not_independent": true,
+          "rejection_matching_target": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.0032515842292642513,
+            "mean": 0.055999999999999966,
+            "n": 5000,
+            "wilson95": [
+              0.049961205994810104,
+              0.06272051333240064
+            ]
+          },
+          "rmse": 0.08186051429356925,
+          "rmse_mcse_delta_method": 0.0008235497910832333,
+          "scenario_id": "A016",
+          "sign_correct": {
+            "applicability": "NOT_APPLICABLE_NO_ELIGIBLE_VALID_REPLICATES",
+            "mcse": null,
+            "mean": null,
+            "n": 0,
+            "wilson95": null
+          },
+          "target": "theta_D_full",
+          "type_I_error_matching_target": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.0032515842292642513,
+            "mean": 0.055999999999999966,
+            "n": 5000,
+            "wilson95": [
+              0.049961205994810104,
+              0.06272051333240064
+            ]
+          },
+          "scenario_parameters": {
+            "status": "FROZEN_MAIN_NOT_EXECUTED",
+            "module_sizes": [
+              5,
+              11,
+              16,
+              17
+            ],
+            "module_membership": "VIRTUAL_DISJOINT",
+            "gamma": 0.2,
+            "mask_policy": "INDEPENDENT_RANDOM_SUBSET_PER_REPLICATE",
+            "delta_applies_to": "MODULE_1_FULL_DONOR_TARGET",
+            "scenario_id": "A016",
+            "block": "A",
+            "n_per_group": 4,
+            "rho": 0.0,
+            "layout": "cycle5_20_80",
+            "signal_structure": "uniform",
+            "coverage": "full",
+            "delta": 0.0,
+            "noise": "gaussian",
+            "background_overlap": "none",
+            "background_effect": 0.0,
+            "cell_number_rule": "NONINFORMATIVE_FIXED_LAYOUT",
+            "donor_factor": "NOISE_FAMILY",
+            "planned_replicates": 5000
+          }
+        },
+        {
+          "bias": {
+            "mcse": 0.0013152517293462918,
+            "mean": 0.0008096699845547982,
+            "n": 5000
+          },
+          "ci_length": {
+            "mcse": 0.0002444093212431487,
+            "mean": 0.36253973588405314,
+            "n": 5000
+          },
+          "coverage": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.0031456369784195,
+            "mean": 0.9477999999999991,
+            "n": 5000,
+            "wilson95": [
+              0.9412836742322345,
+              0.9536287719057724
+            ]
+          },
+          "failure_fraction": 0.0,
+          "failure_reasons": {},
+          "mean_squared_error": {
+            "mcse": 0.000172897159691349,
+            "mean": 0.00864836123611438,
+            "n": 5000
+          },
+          "method": "CELL_NAIVE_WELCH",
+          "module_id": "M1",
+          "n_failed": 0,
+          "n_generated": 5000,
+          "n_valid": 5000,
+          "power_matching_target": {
+            "applicability": "NOT_APPLICABLE_NO_ELIGIBLE_VALID_REPLICATES",
+            "mcse": null,
+            "mean": null,
+            "n": 0,
+            "wilson95": null
+          },
+          "rejection_fields_repeated_across_target_rows_not_independent": true,
+          "rejection_matching_target": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.0031456369784194737,
+            "mean": 0.05219999999999998,
+            "n": 5000,
+            "wilson95": [
+              0.046371228094227626,
+              0.058716325767765545
+            ]
+          },
+          "rmse": 0.09299656572215116,
+          "rmse_mcse_delta_method": 0.0009295889495958347,
+          "scenario_id": "A020",
+          "sign_correct": {
+            "applicability": "NOT_APPLICABLE_NO_ELIGIBLE_VALID_REPLICATES",
+            "mcse": null,
+            "mean": null,
+            "n": 0,
+            "wilson95": null
+          },
+          "target": "theta_D_full",
+          "type_I_error_matching_target": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.0031456369784194737,
+            "mean": 0.05219999999999998,
+            "n": 5000,
+            "wilson95": [
+              0.046371228094227626,
+              0.058716325767765545
+            ]
+          },
+          "scenario_parameters": {
+            "status": "FROZEN_MAIN_NOT_EXECUTED",
+            "module_sizes": [
+              5,
+              11,
+              16,
+              17
+            ],
+            "module_membership": "VIRTUAL_DISJOINT",
+            "gamma": 0.2,
+            "mask_policy": "INDEPENDENT_RANDOM_SUBSET_PER_REPLICATE",
+            "delta_applies_to": "MODULE_1_FULL_DONOR_TARGET",
+            "scenario_id": "A020",
+            "block": "A",
+            "n_per_group": 4,
+            "rho": 0.0,
+            "layout": "cycle5_20_80",
+            "signal_structure": "uniform",
+            "coverage": "ceil_0.6K",
+            "delta": 0.0,
+            "noise": "gaussian",
+            "background_overlap": "none",
+            "background_effect": 0.0,
+            "cell_number_rule": "NONINFORMATIVE_FIXED_LAYOUT",
+            "donor_factor": "NOISE_FAMILY",
+            "planned_replicates": 5000
+          }
+        },
+        {
+          "bias": {
+            "mcse": 0.009637024450488581,
+            "mean": 0.003895605589709687,
+            "n": 5000
+          },
+          "ci_length": {
+            "mcse": 0.0007100163594562543,
+            "mean": 0.3546781691201396,
+            "n": 5000
+          },
+          "coverage": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.005635530143651086,
+            "mean": 0.19800000000000026,
+            "n": 5000,
+            "wilson95": [
+              0.18718821657361545,
+              0.20927547540119912
+            ]
+          },
+          "failure_fraction": 0.0,
+          "failure_reasons": {},
+          "mean_squared_error": {
+            "mcse": 0.009419297917714141,
+            "mean": 0.4642835047992243,
+            "n": 5000
+          },
+          "method": "CELL_NAIVE_WELCH",
+          "module_id": "M1",
+          "n_failed": 0,
+          "n_generated": 5000,
+          "n_valid": 5000,
+          "power_matching_target": {
+            "applicability": "NOT_APPLICABLE_NO_ELIGIBLE_VALID_REPLICATES",
+            "mcse": null,
+            "mean": null,
+            "n": 0,
+            "wilson95": null
+          },
+          "rejection_fields_repeated_across_target_rows_not_independent": true,
+          "rejection_matching_target": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.005635530143651063,
+            "mean": 0.8020000000000019,
+            "n": 5000,
+            "wilson95": [
+              0.790724524598801,
+              0.8128117834263846
+            ]
+          },
+          "rmse": 0.6813835225474889,
+          "rmse_mcse_delta_method": 0.0069118914722931715,
+          "scenario_id": "A048",
+          "sign_correct": {
+            "applicability": "NOT_APPLICABLE_NO_ELIGIBLE_VALID_REPLICATES",
+            "mcse": null,
+            "mean": null,
+            "n": 0,
+            "wilson95": null
+          },
+          "target": "theta_D_full",
+          "type_I_error_matching_target": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.005635530143651063,
+            "mean": 0.8020000000000019,
+            "n": 5000,
+            "wilson95": [
+              0.790724524598801,
+              0.8128117834263846
+            ]
+          },
+          "scenario_parameters": {
+            "status": "FROZEN_MAIN_NOT_EXECUTED",
+            "module_sizes": [
+              5,
+              11,
+              16,
+              17
+            ],
+            "module_membership": "VIRTUAL_DISJOINT",
+            "gamma": 0.2,
+            "mask_policy": "INDEPENDENT_RANDOM_SUBSET_PER_REPLICATE",
+            "delta_applies_to": "MODULE_1_FULL_DONOR_TARGET",
+            "scenario_id": "A048",
+            "block": "A",
+            "n_per_group": 4,
+            "rho": 0.4,
+            "layout": "cycle5_20_80",
+            "signal_structure": "uniform",
+            "coverage": "full",
+            "delta": 0.0,
+            "noise": "gaussian",
+            "background_overlap": "none",
+            "background_effect": 0.0,
+            "cell_number_rule": "NONINFORMATIVE_FIXED_LAYOUT",
+            "donor_factor": "NOISE_FAMILY",
+            "planned_replicates": 5000
+          }
+        },
+        {
+          "bias": {
+            "mcse": 0.00979211739533958,
+            "mean": 0.002177979718090878,
+            "n": 5000
+          },
+          "ci_length": {
+            "mcse": 0.0006899731176887717,
+            "mean": 0.3766490798789194,
+            "n": 5000
+          },
+          "coverage": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.005705065117945632,
+            "mean": 0.2046000000000001,
+            "n": 5000,
+            "wilson95": [
+              0.19364704960554738,
+              0.21600650870359242
+            ]
+          },
+          "failure_fraction": 0.0,
+          "failure_reasons": {},
+          "mean_squared_error": {
+            "mcse": 0.009702578906905639,
+            "mean": 0.47933667345312536,
+            "n": 5000
+          },
+          "method": "CELL_NAIVE_WELCH",
+          "module_id": "M1",
+          "n_failed": 0,
+          "n_generated": 5000,
+          "n_valid": 5000,
+          "power_matching_target": {
+            "applicability": "NOT_APPLICABLE_NO_ELIGIBLE_VALID_REPLICATES",
+            "mcse": null,
+            "mean": null,
+            "n": 0,
+            "wilson95": null
+          },
+          "rejection_fields_repeated_across_target_rows_not_independent": true,
+          "rejection_matching_target": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.0057050651179456156,
+            "mean": 0.7954000000000016,
+            "n": 5000,
+            "wilson95": [
+              0.7839934912964076,
+              0.8063529503944528
+            ]
+          },
+          "rmse": 0.6923414428250886,
+          "rmse_mcse_delta_method": 0.007007076499215774,
+          "scenario_id": "A052",
+          "sign_correct": {
+            "applicability": "NOT_APPLICABLE_NO_ELIGIBLE_VALID_REPLICATES",
+            "mcse": null,
+            "mean": null,
+            "n": 0,
+            "wilson95": null
+          },
+          "target": "theta_D_full",
+          "type_I_error_matching_target": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.0057050651179456156,
+            "mean": 0.7954000000000016,
+            "n": 5000,
+            "wilson95": [
+              0.7839934912964076,
+              0.8063529503944528
+            ]
+          },
+          "scenario_parameters": {
+            "status": "FROZEN_MAIN_NOT_EXECUTED",
+            "module_sizes": [
+              5,
+              11,
+              16,
+              17
+            ],
+            "module_membership": "VIRTUAL_DISJOINT",
+            "gamma": 0.2,
+            "mask_policy": "INDEPENDENT_RANDOM_SUBSET_PER_REPLICATE",
+            "delta_applies_to": "MODULE_1_FULL_DONOR_TARGET",
+            "scenario_id": "A052",
+            "block": "A",
+            "n_per_group": 4,
+            "rho": 0.4,
+            "layout": "cycle5_20_80",
+            "signal_structure": "uniform",
+            "coverage": "ceil_0.6K",
+            "delta": 0.0,
+            "noise": "gaussian",
+            "background_overlap": "none",
+            "background_effect": 0.0,
+            "cell_number_rule": "NONINFORMATIVE_FIXED_LAYOUT",
+            "donor_factor": "NOISE_FAMILY",
+            "planned_replicates": 5000
+          }
+        },
+        {
+          "bias": {
+            "mcse": 0.0005800388388364747,
+            "mean": 0.0009463534718279243,
+            "n": 5000
+          },
+          "ci_length": {
+            "mcse": 5.619146951143071e-05,
+            "mean": 0.1624024511370229,
+            "n": 5000
+          },
+          "coverage": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.003064625262572956,
+            "mean": 0.950599999999998,
+            "n": 5000,
+            "wilson95": [
+              0.9442398676450816,
+              0.956268279362033
+            ]
+          },
+          "failure_fraction": 0.0,
+          "failure_reasons": {},
+          "mean_squared_error": {
+            "mcse": 3.3181744378511616e-05,
+            "mean": 0.0016827844126329093,
+            "n": 5000
+          },
+          "method": "CELL_NAIVE_WELCH",
+          "module_id": "M1",
+          "n_failed": 0,
+          "n_generated": 5000,
+          "n_valid": 5000,
+          "power_matching_target": {
+            "applicability": "NOT_APPLICABLE_NO_ELIGIBLE_VALID_REPLICATES",
+            "mcse": null,
+            "mean": null,
+            "n": 0,
+            "wilson95": null
+          },
+          "rejection_fields_repeated_across_target_rows_not_independent": true,
+          "rejection_matching_target": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.003064625262572895,
+            "mean": 0.049399999999999916,
+            "n": 5000,
+            "wilson95": [
+              0.04373172063796704,
+              0.055760132354918446
+            ]
+          },
+          "rmse": 0.041021755357772166,
+          "rmse_mcse_delta_method": 0.0004044408154784733,
+          "scenario_id": "A080",
+          "sign_correct": {
+            "applicability": "NOT_APPLICABLE_NO_ELIGIBLE_VALID_REPLICATES",
+            "mcse": null,
+            "mean": null,
+            "n": 0,
+            "wilson95": null
+          },
+          "target": "theta_D_full",
+          "type_I_error_matching_target": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.003064625262572895,
+            "mean": 0.049399999999999916,
+            "n": 5000,
+            "wilson95": [
+              0.04373172063796704,
+              0.055760132354918446
+            ]
+          },
+          "scenario_parameters": {
+            "status": "FROZEN_MAIN_NOT_EXECUTED",
+            "module_sizes": [
+              5,
+              11,
+              16,
+              17
+            ],
+            "module_membership": "VIRTUAL_DISJOINT",
+            "gamma": 0.2,
+            "mask_policy": "INDEPENDENT_RANDOM_SUBSET_PER_REPLICATE",
+            "delta_applies_to": "MODULE_1_FULL_DONOR_TARGET",
+            "scenario_id": "A080",
+            "block": "A",
+            "n_per_group": 12,
+            "rho": 0.0,
+            "layout": "cycle5_20_80",
+            "signal_structure": "uniform",
+            "coverage": "full",
+            "delta": 0.0,
+            "noise": "gaussian",
+            "background_overlap": "none",
+            "background_effect": 0.0,
+            "cell_number_rule": "NONINFORMATIVE_FIXED_LAYOUT",
+            "donor_factor": "NOISE_FAMILY",
+            "planned_replicates": 5000
+          }
+        },
+        {
+          "bias": {
+            "mcse": 0.0006578567056145274,
+            "mean": 0.0012651620343957807,
+            "n": 5000
+          },
+          "ci_length": {
+            "mcse": 6.425517875374754e-05,
+            "mean": 0.1851287537705749,
+            "n": 5000
+          },
+          "coverage": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.002993025225419931,
+            "mean": 0.9529999999999998,
+            "n": 5000,
+            "wilson95": [
+              0.946777958205572,
+              0.9585265038322062
+            ]
+          },
+          "failure_fraction": 0.0,
+          "failure_reasons": {},
+          "mean_squared_error": {
+            "mcse": 4.231069380155531e-05,
+            "mean": 0.002165045085138152,
+            "n": 5000
+          },
+          "method": "CELL_NAIVE_WELCH",
+          "module_id": "M1",
+          "n_failed": 0,
+          "n_generated": 5000,
+          "n_valid": 5000,
+          "power_matching_target": {
+            "applicability": "NOT_APPLICABLE_NO_ELIGIBLE_VALID_REPLICATES",
+            "mcse": null,
+            "mean": null,
+            "n": 0,
+            "wilson95": null
+          },
+          "rejection_fields_repeated_across_target_rows_not_independent": true,
+          "rejection_matching_target": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.0029930252254199343,
+            "mean": 0.04700000000000026,
+            "n": 5000,
+            "wilson95": [
+              0.04147349616779377,
+              0.053222041794428
+            ]
+          },
+          "rmse": 0.04653004497244927,
+          "rmse_mcse_delta_method": 0.0004546599280809607,
+          "scenario_id": "A084",
+          "sign_correct": {
+            "applicability": "NOT_APPLICABLE_NO_ELIGIBLE_VALID_REPLICATES",
+            "mcse": null,
+            "mean": null,
+            "n": 0,
+            "wilson95": null
+          },
+          "target": "theta_D_full",
+          "type_I_error_matching_target": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.0029930252254199343,
+            "mean": 0.04700000000000026,
+            "n": 5000,
+            "wilson95": [
+              0.04147349616779377,
+              0.053222041794428
+            ]
+          },
+          "scenario_parameters": {
+            "status": "FROZEN_MAIN_NOT_EXECUTED",
+            "module_sizes": [
+              5,
+              11,
+              16,
+              17
+            ],
+            "module_membership": "VIRTUAL_DISJOINT",
+            "gamma": 0.2,
+            "mask_policy": "INDEPENDENT_RANDOM_SUBSET_PER_REPLICATE",
+            "delta_applies_to": "MODULE_1_FULL_DONOR_TARGET",
+            "scenario_id": "A084",
+            "block": "A",
+            "n_per_group": 12,
+            "rho": 0.0,
+            "layout": "cycle5_20_80",
+            "signal_structure": "uniform",
+            "coverage": "ceil_0.6K",
+            "delta": 0.0,
+            "noise": "gaussian",
+            "background_overlap": "none",
+            "background_effect": 0.0,
+            "cell_number_rule": "NONINFORMATIVE_FIXED_LAYOUT",
+            "donor_factor": "NOISE_FAMILY",
+            "planned_replicates": 5000
+          }
+        },
+        {
+          "bias": {
+            "mcse": 0.005034424216307672,
+            "mean": -0.00305206117676292,
+            "n": 5000
+          },
+          "ci_length": {
+            "mcse": 0.0003354874546166968,
+            "mean": 0.21148447716055838,
+            "n": 5000
+          },
+          "coverage": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.005947837253994095,
+            "mean": 0.22960000000000008,
+            "n": 5000,
+            "wilson95": [
+              0.21815266660552562,
+              0.24146250660636132
+            ]
+          },
+          "failure_fraction": 0.0,
+          "failure_reasons": {},
+          "mean_squared_error": {
+            "mcse": 0.002481821020871558,
+            "mean": 0.12671110559896312,
+            "n": 5000
+          },
+          "method": "CELL_NAIVE_WELCH",
+          "module_id": "M1",
+          "n_failed": 0,
+          "n_generated": 5000,
+          "n_valid": 5000,
+          "power_matching_target": {
+            "applicability": "NOT_APPLICABLE_NO_ELIGIBLE_VALID_REPLICATES",
+            "mcse": null,
+            "mean": null,
+            "n": 0,
+            "wilson95": null
+          },
+          "rejection_fields_repeated_across_target_rows_not_independent": true,
+          "rejection_matching_target": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.005947837253994109,
+            "mean": 0.7703999999999983,
+            "n": 5000,
+            "wilson95": [
+              0.7585374933936386,
+              0.7818473333944744
+            ]
+          },
+          "rmse": 0.3559650342364586,
+          "rmse_mcse_delta_method": 0.0034860460749958754,
+          "scenario_id": "A112",
+          "sign_correct": {
+            "applicability": "NOT_APPLICABLE_NO_ELIGIBLE_VALID_REPLICATES",
+            "mcse": null,
+            "mean": null,
+            "n": 0,
+            "wilson95": null
+          },
+          "target": "theta_D_full",
+          "type_I_error_matching_target": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.005947837253994109,
+            "mean": 0.7703999999999983,
+            "n": 5000,
+            "wilson95": [
+              0.7585374933936386,
+              0.7818473333944744
+            ]
+          },
+          "scenario_parameters": {
+            "status": "FROZEN_MAIN_NOT_EXECUTED",
+            "module_sizes": [
+              5,
+              11,
+              16,
+              17
+            ],
+            "module_membership": "VIRTUAL_DISJOINT",
+            "gamma": 0.2,
+            "mask_policy": "INDEPENDENT_RANDOM_SUBSET_PER_REPLICATE",
+            "delta_applies_to": "MODULE_1_FULL_DONOR_TARGET",
+            "scenario_id": "A112",
+            "block": "A",
+            "n_per_group": 12,
+            "rho": 0.4,
+            "layout": "cycle5_20_80",
+            "signal_structure": "uniform",
+            "coverage": "full",
+            "delta": 0.0,
+            "noise": "gaussian",
+            "background_overlap": "none",
+            "background_effect": 0.0,
+            "cell_number_rule": "NONINFORMATIVE_FIXED_LAYOUT",
+            "donor_factor": "NOISE_FAMILY",
+            "planned_replicates": 5000
+          }
+        },
+        {
+          "bias": {
+            "mcse": 0.004933146699039713,
+            "mean": 0.0014903807359636359,
+            "n": 5000
+          },
+          "ci_length": {
+            "mcse": 0.0003319736421563592,
+            "mean": 0.22110069109283584,
+            "n": 5000
+          },
+          "coverage": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.006165597456856878,
+            "mean": 0.2551999999999999,
+            "n": 5000,
+            "wilson95": [
+              0.2433067621323737,
+              0.2674691047399263
+            ]
+          },
+          "failure_fraction": 0.0,
+          "failure_reasons": {},
+          "mean_squared_error": {
+            "mcse": 0.0024186969968489056,
+            "mean": 0.12165756706961574,
+            "n": 5000
+          },
+          "method": "CELL_NAIVE_WELCH",
+          "module_id": "M1",
+          "n_failed": 0,
+          "n_generated": 5000,
+          "n_valid": 5000,
+          "power_matching_target": {
+            "applicability": "NOT_APPLICABLE_NO_ELIGIBLE_VALID_REPLICATES",
+            "mcse": null,
+            "mean": null,
+            "n": 0,
+            "wilson95": null
+          },
+          "rejection_fields_repeated_across_target_rows_not_independent": true,
+          "rejection_matching_target": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.006165597456856866,
+            "mean": 0.7448000000000016,
+            "n": 5000,
+            "wilson95": [
+              0.7325308952600738,
+              0.7566932378676263
+            ]
+          },
+          "rmse": 0.34879444816340716,
+          "rmse_mcse_delta_method": 0.0034672240478377213,
+          "scenario_id": "A116",
+          "sign_correct": {
+            "applicability": "NOT_APPLICABLE_NO_ELIGIBLE_VALID_REPLICATES",
+            "mcse": null,
+            "mean": null,
+            "n": 0,
+            "wilson95": null
+          },
+          "target": "theta_D_full",
+          "type_I_error_matching_target": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.006165597456856866,
+            "mean": 0.7448000000000016,
+            "n": 5000,
+            "wilson95": [
+              0.7325308952600738,
+              0.7566932378676263
+            ]
+          },
+          "scenario_parameters": {
+            "status": "FROZEN_MAIN_NOT_EXECUTED",
+            "module_sizes": [
+              5,
+              11,
+              16,
+              17
+            ],
+            "module_membership": "VIRTUAL_DISJOINT",
+            "gamma": 0.2,
+            "mask_policy": "INDEPENDENT_RANDOM_SUBSET_PER_REPLICATE",
+            "delta_applies_to": "MODULE_1_FULL_DONOR_TARGET",
+            "scenario_id": "A116",
+            "block": "A",
+            "n_per_group": 12,
+            "rho": 0.4,
+            "layout": "cycle5_20_80",
+            "signal_structure": "uniform",
+            "coverage": "ceil_0.6K",
+            "delta": 0.0,
+            "noise": "gaussian",
+            "background_overlap": "none",
+            "background_effect": 0.0,
+            "cell_number_rule": "NONINFORMATIVE_FIXED_LAYOUT",
+            "donor_factor": "NOISE_FAMILY",
+            "planned_replicates": 5000
+          }
+        },
+        {
+          "bias": {
+            "mcse": 0.002075127260074702,
+            "mean": -0.0006376017949572178,
+            "n": 5000
+          },
+          "ci_length": {
+            "mcse": 0.003649118436422101,
+            "mean": 0.7252401355992761,
+            "n": 5000
+          },
+          "coverage": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.0024202462684610776,
+            "mean": 0.9698000000000012,
+            "n": 5000,
+            "wilson95": [
+              0.9646838626619504,
+              0.9741948045904739
+            ]
+          },
+          "failure_fraction": 0.0,
+          "failure_reasons": {},
+          "mean_squared_error": {
+            "mcse": 0.00044214656016301486,
+            "mean": 0.0215268661104291,
+            "n": 5000
+          },
+          "method": "DONOR_MEAN_WELCH",
+          "module_id": "M1",
+          "n_failed": 0,
+          "n_generated": 5000,
+          "n_valid": 5000,
+          "power_matching_target": {
+            "applicability": "NOT_APPLICABLE_NO_ELIGIBLE_VALID_REPLICATES",
+            "mcse": null,
+            "mean": null,
+            "n": 0,
+            "wilson95": null
+          },
+          "rejection_fields_repeated_across_target_rows_not_independent": true,
+          "rejection_matching_target": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.002420246268461126,
+            "mean": 0.03020000000000003,
+            "n": 5000,
+            "wilson95": [
+              0.025805195409526097,
+              0.035316137338049586
+            ]
+          },
+          "rmse": 0.1467203670607087,
+          "rmse_mcse_delta_method": 0.001506766132816677,
+          "scenario_id": "A016",
+          "sign_correct": {
+            "applicability": "NOT_APPLICABLE_NO_ELIGIBLE_VALID_REPLICATES",
+            "mcse": null,
+            "mean": null,
+            "n": 0,
+            "wilson95": null
+          },
+          "target": "theta_D_full",
+          "type_I_error_matching_target": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.002420246268461126,
+            "mean": 0.03020000000000003,
+            "n": 5000,
+            "wilson95": [
+              0.025805195409526097,
+              0.035316137338049586
+            ]
+          },
+          "scenario_parameters": {
+            "status": "FROZEN_MAIN_NOT_EXECUTED",
+            "module_sizes": [
+              5,
+              11,
+              16,
+              17
+            ],
+            "module_membership": "VIRTUAL_DISJOINT",
+            "gamma": 0.2,
+            "mask_policy": "INDEPENDENT_RANDOM_SUBSET_PER_REPLICATE",
+            "delta_applies_to": "MODULE_1_FULL_DONOR_TARGET",
+            "scenario_id": "A016",
+            "block": "A",
+            "n_per_group": 4,
+            "rho": 0.0,
+            "layout": "cycle5_20_80",
+            "signal_structure": "uniform",
+            "coverage": "full",
+            "delta": 0.0,
+            "noise": "gaussian",
+            "background_overlap": "none",
+            "background_effect": 0.0,
+            "cell_number_rule": "NONINFORMATIVE_FIXED_LAYOUT",
+            "donor_factor": "NOISE_FAMILY",
+            "planned_replicates": 5000
+          }
+        },
+        {
+          "bias": {
+            "mcse": 0.002335394275023232,
+            "mean": -0.0004910637764270198,
+            "n": 5000
+          },
+          "ci_length": {
+            "mcse": 0.004047587597126143,
+            "mean": 0.8177757961250768,
+            "n": 5000
+          },
+          "coverage": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.002349188796159258,
+            "mean": 0.971599999999999,
+            "n": 5000,
+            "wilson95": [
+              0.9666211762120761,
+              0.9758547273133461
+            ]
+          },
+          "failure_fraction": 0.0,
+          "failure_reasons": {},
+          "mean_squared_error": {
+            "mcse": 0.0005281792634315103,
+            "mean": 0.02726511917626911,
+            "n": 5000
+          },
+          "method": "DONOR_MEAN_WELCH",
+          "module_id": "M1",
+          "n_failed": 0,
+          "n_generated": 5000,
+          "n_valid": 5000,
+          "power_matching_target": {
+            "applicability": "NOT_APPLICABLE_NO_ELIGIBLE_VALID_REPLICATES",
+            "mcse": null,
+            "mean": null,
+            "n": 0,
+            "wilson95": null
+          },
+          "rejection_fields_repeated_across_target_rows_not_independent": true,
+          "rejection_matching_target": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.0023491887961592183,
+            "mean": 0.028399999999999984,
+            "n": 5000,
+            "wilson95": [
+              0.024145272686653948,
+              0.03337882378792394
+            ]
+          },
+          "rmse": 0.16512152850633716,
+          "rmse_mcse_delta_method": 0.0015993652318063401,
+          "scenario_id": "A020",
+          "sign_correct": {
+            "applicability": "NOT_APPLICABLE_NO_ELIGIBLE_VALID_REPLICATES",
+            "mcse": null,
+            "mean": null,
+            "n": 0,
+            "wilson95": null
+          },
+          "target": "theta_D_full",
+          "type_I_error_matching_target": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.0023491887961592183,
+            "mean": 0.028399999999999984,
+            "n": 5000,
+            "wilson95": [
+              0.024145272686653948,
+              0.03337882378792394
+            ]
+          },
+          "scenario_parameters": {
+            "status": "FROZEN_MAIN_NOT_EXECUTED",
+            "module_sizes": [
+              5,
+              11,
+              16,
+              17
+            ],
+            "module_membership": "VIRTUAL_DISJOINT",
+            "gamma": 0.2,
+            "mask_policy": "INDEPENDENT_RANDOM_SUBSET_PER_REPLICATE",
+            "delta_applies_to": "MODULE_1_FULL_DONOR_TARGET",
+            "scenario_id": "A020",
+            "block": "A",
+            "n_per_group": 4,
+            "rho": 0.0,
+            "layout": "cycle5_20_80",
+            "signal_structure": "uniform",
+            "coverage": "ceil_0.6K",
+            "delta": 0.0,
+            "noise": "gaussian",
+            "background_overlap": "none",
+            "background_effect": 0.0,
+            "cell_number_rule": "NONINFORMATIVE_FIXED_LAYOUT",
+            "donor_factor": "NOISE_FAMILY",
+            "planned_replicates": 5000
+          }
+        },
+        {
+          "bias": {
+            "mcse": 0.006574471827526423,
+            "mean": 0.00453694694035895,
+            "n": 5000
+          },
+          "ci_length": {
+            "mcse": 0.009940268173493347,
+            "mean": 2.3232374235090854,
+            "n": 5000
+          },
+          "coverage": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.002710747498384917,
+            "mean": 0.9617999999999995,
+            "n": 5000,
+            "wilson95": [
+              0.9561227277633483,
+              0.9667682227201971
+            ]
+          },
+          "failure_fraction": 0.0,
+          "failure_reasons": {},
+          "mean_squared_error": {
+            "mcse": 0.004281271883980674,
+            "mean": 0.21609575926242272,
+            "n": 5000
+          },
+          "method": "DONOR_MEAN_WELCH",
+          "module_id": "M1",
+          "n_failed": 0,
+          "n_generated": 5000,
+          "n_valid": 5000,
+          "power_matching_target": {
+            "applicability": "NOT_APPLICABLE_NO_ELIGIBLE_VALID_REPLICATES",
+            "mcse": null,
+            "mean": null,
+            "n": 0,
+            "wilson95": null
+          },
+          "rejection_fields_repeated_across_target_rows_not_independent": true,
+          "rejection_matching_target": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.0027107474983848997,
+            "mean": 0.03819999999999996,
+            "n": 5000,
+            "wilson95": [
+              0.033231777279803,
+              0.04387727223665177
+            ]
+          },
+          "rmse": 0.4648610106928981,
+          "rmse_mcse_delta_method": 0.004604894565796375,
+          "scenario_id": "A048",
+          "sign_correct": {
+            "applicability": "NOT_APPLICABLE_NO_ELIGIBLE_VALID_REPLICATES",
+            "mcse": null,
+            "mean": null,
+            "n": 0,
+            "wilson95": null
+          },
+          "target": "theta_D_full",
+          "type_I_error_matching_target": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.0027107474983848997,
+            "mean": 0.03819999999999996,
+            "n": 5000,
+            "wilson95": [
+              0.033231777279803,
+              0.04387727223665177
+            ]
+          },
+          "scenario_parameters": {
+            "status": "FROZEN_MAIN_NOT_EXECUTED",
+            "module_sizes": [
+              5,
+              11,
+              16,
+              17
+            ],
+            "module_membership": "VIRTUAL_DISJOINT",
+            "gamma": 0.2,
+            "mask_policy": "INDEPENDENT_RANDOM_SUBSET_PER_REPLICATE",
+            "delta_applies_to": "MODULE_1_FULL_DONOR_TARGET",
+            "scenario_id": "A048",
+            "block": "A",
+            "n_per_group": 4,
+            "rho": 0.4,
+            "layout": "cycle5_20_80",
+            "signal_structure": "uniform",
+            "coverage": "full",
+            "delta": 0.0,
+            "noise": "gaussian",
+            "background_overlap": "none",
+            "background_effect": 0.0,
+            "cell_number_rule": "NONINFORMATIVE_FIXED_LAYOUT",
+            "donor_factor": "NOISE_FAMILY",
+            "planned_replicates": 5000
+          }
+        },
+        {
+          "bias": {
+            "mcse": 0.0066019740931391,
+            "mean": 0.0006239159584945359,
+            "n": 5000
+          },
+          "ci_length": {
+            "mcse": 0.01006888959504131,
+            "mean": 2.3578041234278913,
+            "n": 5000
+          },
+          "coverage": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.0028432080472592645,
+            "mean": 0.9578000000000009,
+            "n": 5000,
+            "wilson95": [
+              0.951867024068152,
+              0.9630300680309537
+            ]
+          },
+          "failure_fraction": 0.0,
+          "failure_reasons": {},
+          "mean_squared_error": {
+            "mcse": 0.0044742706804017365,
+            "mean": 0.21788711284159581,
+            "n": 5000
+          },
+          "method": "DONOR_MEAN_WELCH",
+          "module_id": "M1",
+          "n_failed": 0,
+          "n_generated": 5000,
+          "n_valid": 5000,
+          "power_matching_target": {
+            "applicability": "NOT_APPLICABLE_NO_ELIGIBLE_VALID_REPLICATES",
+            "mcse": null,
+            "mean": null,
+            "n": 0,
+            "wilson95": null
+          },
+          "rejection_fields_repeated_across_target_rows_not_independent": true,
+          "rejection_matching_target": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.0028432080472592914,
+            "mean": 0.04219999999999996,
+            "n": 5000,
+            "wilson95": [
+              0.03696993196904638,
+              0.04813297593184793
+            ]
+          },
+          "rmse": 0.4667837966785006,
+          "rmse_mcse_delta_method": 0.004792658520110768,
+          "scenario_id": "A052",
+          "sign_correct": {
+            "applicability": "NOT_APPLICABLE_NO_ELIGIBLE_VALID_REPLICATES",
+            "mcse": null,
+            "mean": null,
+            "n": 0,
+            "wilson95": null
+          },
+          "target": "theta_D_full",
+          "type_I_error_matching_target": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.0028432080472592914,
+            "mean": 0.04219999999999996,
+            "n": 5000,
+            "wilson95": [
+              0.03696993196904638,
+              0.04813297593184793
+            ]
+          },
+          "scenario_parameters": {
+            "status": "FROZEN_MAIN_NOT_EXECUTED",
+            "module_sizes": [
+              5,
+              11,
+              16,
+              17
+            ],
+            "module_membership": "VIRTUAL_DISJOINT",
+            "gamma": 0.2,
+            "mask_policy": "INDEPENDENT_RANDOM_SUBSET_PER_REPLICATE",
+            "delta_applies_to": "MODULE_1_FULL_DONOR_TARGET",
+            "scenario_id": "A052",
+            "block": "A",
+            "n_per_group": 4,
+            "rho": 0.4,
+            "layout": "cycle5_20_80",
+            "signal_structure": "uniform",
+            "coverage": "ceil_0.6K",
+            "delta": 0.0,
+            "noise": "gaussian",
+            "background_overlap": "none",
+            "background_effect": 0.0,
+            "cell_number_rule": "NONINFORMATIVE_FIXED_LAYOUT",
+            "donor_factor": "NOISE_FAMILY",
+            "planned_replicates": 5000
+          }
+        },
+        {
+          "bias": {
+            "mcse": 0.0010317560292691266,
+            "mean": -0.00012565027397222183,
+            "n": 5000
+          },
+          "ci_length": {
+            "mcse": 0.0008433281024371479,
+            "mean": 0.2973763061296444,
+            "n": 5000
+          },
+          "coverage": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.0028560546213264085,
+            "mean": 0.9574000000000004,
+            "n": 5000,
+            "wilson95": [
+              0.9514422309563567,
+              0.9626554753043052
+            ]
+          },
+          "failure_fraction": 0.0,
+          "failure_reasons": {},
+          "mean_squared_error": {
+            "mcse": 0.00010527193966968518,
+            "mean": 0.005321553787153376,
+            "n": 5000
+          },
+          "method": "DONOR_MEAN_WELCH",
+          "module_id": "M1",
+          "n_failed": 0,
+          "n_generated": 5000,
+          "n_valid": 5000,
+          "power_matching_target": {
+            "applicability": "NOT_APPLICABLE_NO_ELIGIBLE_VALID_REPLICATES",
+            "mcse": null,
+            "mean": null,
+            "n": 0,
+            "wilson95": null
+          },
+          "rejection_fields_repeated_across_target_rows_not_independent": true,
+          "rejection_matching_target": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.002856054621326421,
+            "mean": 0.04260000000000003,
+            "n": 5000,
+            "wilson95": [
+              0.03734452469569485,
+              0.04855776904364341
+            ]
+          },
+          "rmse": 0.07294898071360131,
+          "rmse_mcse_delta_method": 0.0007215449663579553,
+          "scenario_id": "A080",
+          "sign_correct": {
+            "applicability": "NOT_APPLICABLE_NO_ELIGIBLE_VALID_REPLICATES",
+            "mcse": null,
+            "mean": null,
+            "n": 0,
+            "wilson95": null
+          },
+          "target": "theta_D_full",
+          "type_I_error_matching_target": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.002856054621326421,
+            "mean": 0.04260000000000003,
+            "n": 5000,
+            "wilson95": [
+              0.03734452469569485,
+              0.04855776904364341
+            ]
+          },
+          "scenario_parameters": {
+            "status": "FROZEN_MAIN_NOT_EXECUTED",
+            "module_sizes": [
+              5,
+              11,
+              16,
+              17
+            ],
+            "module_membership": "VIRTUAL_DISJOINT",
+            "gamma": 0.2,
+            "mask_policy": "INDEPENDENT_RANDOM_SUBSET_PER_REPLICATE",
+            "delta_applies_to": "MODULE_1_FULL_DONOR_TARGET",
+            "scenario_id": "A080",
+            "block": "A",
+            "n_per_group": 12,
+            "rho": 0.0,
+            "layout": "cycle5_20_80",
+            "signal_structure": "uniform",
+            "coverage": "full",
+            "delta": 0.0,
+            "noise": "gaussian",
+            "background_overlap": "none",
+            "background_effect": 0.0,
+            "cell_number_rule": "NONINFORMATIVE_FIXED_LAYOUT",
+            "donor_factor": "NOISE_FAMILY",
+            "planned_replicates": 5000
+          }
+        },
+        {
+          "bias": {
+            "mcse": 0.0011536021644973932,
+            "mean": 7.601195553391763e-05,
+            "n": 5000
+          },
+          "ci_length": {
+            "mcse": 0.0009455051848520728,
+            "mean": 0.3364935563886814,
+            "n": 5000
+          },
+          "coverage": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.002950275919299728,
+            "mean": 0.9544000000000008,
+            "n": 5000,
+            "wilson95": [
+              0.9482604246805078,
+              0.9598418877918244
+            ]
+          },
+          "failure_fraction": 0.0,
+          "failure_reasons": {},
+          "mean_squared_error": {
+            "mcse": 0.00013676100233374323,
+            "mean": 0.006652664749528787,
+            "n": 5000
+          },
+          "method": "DONOR_MEAN_WELCH",
+          "module_id": "M1",
+          "n_failed": 0,
+          "n_generated": 5000,
+          "n_valid": 5000,
+          "power_matching_target": {
+            "applicability": "NOT_APPLICABLE_NO_ELIGIBLE_VALID_REPLICATES",
+            "mcse": null,
+            "mean": null,
+            "n": 0,
+            "wilson95": null
+          },
+          "rejection_fields_repeated_across_target_rows_not_independent": true,
+          "rejection_matching_target": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.0029502759192997527,
+            "mean": 0.04560000000000001,
+            "n": 5000,
+            "wilson95": [
+              0.040158112208175674,
+              0.051739575319492255
+            ]
+          },
+          "rmse": 0.08156386914270795,
+          "rmse_mcse_delta_method": 0.0008383675503087022,
+          "scenario_id": "A084",
+          "sign_correct": {
+            "applicability": "NOT_APPLICABLE_NO_ELIGIBLE_VALID_REPLICATES",
+            "mcse": null,
+            "mean": null,
+            "n": 0,
+            "wilson95": null
+          },
+          "target": "theta_D_full",
+          "type_I_error_matching_target": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.0029502759192997527,
+            "mean": 0.04560000000000001,
+            "n": 5000,
+            "wilson95": [
+              0.040158112208175674,
+              0.051739575319492255
+            ]
+          },
+          "scenario_parameters": {
+            "status": "FROZEN_MAIN_NOT_EXECUTED",
+            "module_sizes": [
+              5,
+              11,
+              16,
+              17
+            ],
+            "module_membership": "VIRTUAL_DISJOINT",
+            "gamma": 0.2,
+            "mask_policy": "INDEPENDENT_RANDOM_SUBSET_PER_REPLICATE",
+            "delta_applies_to": "MODULE_1_FULL_DONOR_TARGET",
+            "scenario_id": "A084",
+            "block": "A",
+            "n_per_group": 12,
+            "rho": 0.0,
+            "layout": "cycle5_20_80",
+            "signal_structure": "uniform",
+            "coverage": "ceil_0.6K",
+            "delta": 0.0,
+            "noise": "gaussian",
+            "background_overlap": "none",
+            "background_effect": 0.0,
+            "cell_number_rule": "NONINFORMATIVE_FIXED_LAYOUT",
+            "donor_factor": "NOISE_FAMILY",
+            "planned_replicates": 5000
+          }
+        },
+        {
+          "bias": {
+            "mcse": 0.003765204857197476,
+            "mean": -0.0033434164206580545,
+            "n": 5000
+          },
+          "ci_length": {
+            "mcse": 0.002350950076095543,
+            "mean": 1.0961248889202433,
+            "n": 5000
+          },
+          "coverage": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.0030051036587778464,
+            "mean": 0.9526,
+            "n": 5000,
+            "wilson95": [
+              0.946354660519909,
+              0.9581504156794253
+            ]
+          },
+          "failure_fraction": 0.0,
+          "failure_reasons": {},
+          "mean_squared_error": {
+            "mcse": 0.0013834738581139172,
+            "mean": 0.07088083974906237,
+            "n": 5000
+          },
+          "method": "DONOR_MEAN_WELCH",
+          "module_id": "M1",
+          "n_failed": 0,
+          "n_generated": 5000,
+          "n_valid": 5000,
+          "power_matching_target": {
+            "applicability": "NOT_APPLICABLE_NO_ELIGIBLE_VALID_REPLICATES",
+            "mcse": null,
+            "mean": null,
+            "n": 0,
+            "wilson95": null
+          },
+          "rejection_fields_repeated_across_target_rows_not_independent": true,
+          "rejection_matching_target": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.0030051036587778477,
+            "mean": 0.04740000000000004,
+            "n": 5000,
+            "wilson95": [
+              0.04184958432057469,
+              0.05364533948009102
+            ]
+          },
+          "rmse": 0.2662345577663846,
+          "rmse_mcse_delta_method": 0.0025982236673570518,
+          "scenario_id": "A112",
+          "sign_correct": {
+            "applicability": "NOT_APPLICABLE_NO_ELIGIBLE_VALID_REPLICATES",
+            "mcse": null,
+            "mean": null,
+            "n": 0,
+            "wilson95": null
+          },
+          "target": "theta_D_full",
+          "type_I_error_matching_target": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.0030051036587778477,
+            "mean": 0.04740000000000004,
+            "n": 5000,
+            "wilson95": [
+              0.04184958432057469,
+              0.05364533948009102
+            ]
+          },
+          "scenario_parameters": {
+            "status": "FROZEN_MAIN_NOT_EXECUTED",
+            "module_sizes": [
+              5,
+              11,
+              16,
+              17
+            ],
+            "module_membership": "VIRTUAL_DISJOINT",
+            "gamma": 0.2,
+            "mask_policy": "INDEPENDENT_RANDOM_SUBSET_PER_REPLICATE",
+            "delta_applies_to": "MODULE_1_FULL_DONOR_TARGET",
+            "scenario_id": "A112",
+            "block": "A",
+            "n_per_group": 12,
+            "rho": 0.4,
+            "layout": "cycle5_20_80",
+            "signal_structure": "uniform",
+            "coverage": "full",
+            "delta": 0.0,
+            "noise": "gaussian",
+            "background_overlap": "none",
+            "background_effect": 0.0,
+            "cell_number_rule": "NONINFORMATIVE_FIXED_LAYOUT",
+            "donor_factor": "NOISE_FAMILY",
+            "planned_replicates": 5000
+          }
+        },
+        {
+          "bias": {
+            "mcse": 0.003719304308565881,
+            "mean": -0.002940965501394161,
+            "n": 5000
+          },
+          "ci_length": {
+            "mcse": 0.0023953190699224584,
+            "mean": 1.1032250688697334,
+            "n": 5000
+          },
+          "coverage": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.002906763148245801,
+            "mean": 0.9558000000000009,
+            "n": 5000,
+            "wilson95": [
+              0.9497443776640049,
+              0.9611557852428811
+            ]
+          },
+          "failure_fraction": 0.0,
+          "failure_reasons": {},
+          "mean_squared_error": {
+            "mcse": 0.00134502194185264,
+            "mean": 0.0691609387521248,
+            "n": 5000
+          },
+          "method": "DONOR_MEAN_WELCH",
+          "module_id": "M1",
+          "n_failed": 0,
+          "n_generated": 5000,
+          "n_valid": 5000,
+          "power_matching_target": {
+            "applicability": "NOT_APPLICABLE_NO_ELIGIBLE_VALID_REPLICATES",
+            "mcse": null,
+            "mean": null,
+            "n": 0,
+            "wilson95": null
+          },
+          "rejection_fields_repeated_across_target_rows_not_independent": true,
+          "rejection_matching_target": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.002906763148245827,
+            "mean": 0.04419999999999996,
+            "n": 5000,
+            "wilson95": [
+              0.03884421475711896,
+              0.05025562233599513
+            ]
+          },
+          "rmse": 0.26298467398714476,
+          "rmse_mcse_delta_method": 0.0025572249543302046,
+          "scenario_id": "A116",
+          "sign_correct": {
+            "applicability": "NOT_APPLICABLE_NO_ELIGIBLE_VALID_REPLICATES",
+            "mcse": null,
+            "mean": null,
+            "n": 0,
+            "wilson95": null
+          },
+          "target": "theta_D_full",
+          "type_I_error_matching_target": {
+            "applicability": "APPLICABLE",
+            "mcse": 0.002906763148245827,
+            "mean": 0.04419999999999996,
+            "n": 5000,
+            "wilson95": [
+              0.03884421475711896,
+              0.05025562233599513
+            ]
+          },
+          "scenario_parameters": {
+            "status": "FROZEN_MAIN_NOT_EXECUTED",
+            "module_sizes": [
+              5,
+              11,
+              16,
+              17
+            ],
+            "module_membership": "VIRTUAL_DISJOINT",
+            "gamma": 0.2,
+            "mask_policy": "INDEPENDENT_RANDOM_SUBSET_PER_REPLICATE",
+            "delta_applies_to": "MODULE_1_FULL_DONOR_TARGET",
+            "scenario_id": "A116",
+            "block": "A",
+            "n_per_group": 12,
+            "rho": 0.4,
+            "layout": "cycle5_20_80",
+            "signal_structure": "uniform",
+            "coverage": "ceil_0.6K",
+            "delta": 0.0,
+            "noise": "gaussian",
+            "background_overlap": "none",
+            "background_effect": 0.0,
+            "cell_number_rule": "NONINFORMATIVE_FIXED_LAYOUT",
+            "donor_factor": "NOISE_FAMILY",
+            "planned_replicates": 5000
+          }
+        }
+      ],
+      "note": "",
+      "uncertainty": "WILSON95_MC"
+    },
+    {
+      "panel_id": "c",
+      "selection": {
+        "id": "FIG2_PRIMARY_NULL",
+        "module": "M1",
+        "targets": [
+          "theta_D_full",
+          "matching_target"
+        ],
+        "where": {
+          "block": "A",
+          "layout": "cycle5_20_80",
+          "signal_structure": "uniform",
+          "delta": 0.0,
+          "noise": "gaussian"
+        },
+        "vary": [
+          "n_per_group",
+          "rho",
+          "coverage"
+        ],
+        "metrics": [
+          "coverage",
+          "type_I_error_matching_target",
+          "fdr"
+        ],
+        "scenario_ids": [
+          "A016",
+          "A020",
+          "A048",
+          "A052",
+          "A080",
+          "A084",
+          "A112",
+          "A116"
+        ]
+      },
+      "frozen_rule_id": "FIG2_PRIMARY_NULL",
+      "scenario_ids": [
+        "A016",
+        "A020",
+        "A048",
+        "A052",
+        "A080",
+        "A084",
+        "A112",
+        "A116"
+      ],
+      "module_ids": [],
+      "target": "MATCHING_METHOD_TARGET",
+      "metric": "fdr",
+      "rows": [
+        {
+          "conditional_on_successful_family": true,
+          "failure_fraction": 0.0,
+          "family": "FOUR_MODULES_MATCHING_METHOD_OBSERVED_TARGET",
+          "fdr": {
+            "mcse": 0.0028627383838225303,
+            "mean": 0.04279999999999998,
+            "n": 5000
+          },
+          "method": "CELL_NAIVE_WELCH",
+          "n_failed": 0,
+          "n_generated": 5000,
+          "n_valid": 5000,
+          "scenario_id": "A016",
+          "scenario_parameters": {
+            "status": "FROZEN_MAIN_NOT_EXECUTED",
+            "module_sizes": [
+              5,
+              11,
+              16,
+              17
+            ],
+            "module_membership": "VIRTUAL_DISJOINT",
+            "gamma": 0.2,
+            "mask_policy": "INDEPENDENT_RANDOM_SUBSET_PER_REPLICATE",
+            "delta_applies_to": "MODULE_1_FULL_DONOR_TARGET",
+            "scenario_id": "A016",
+            "block": "A",
+            "n_per_group": 4,
+            "rho": 0.0,
+            "layout": "cycle5_20_80",
+            "signal_structure": "uniform",
+            "coverage": "full",
+            "delta": 0.0,
+            "noise": "gaussian",
+            "background_overlap": "none",
+            "background_effect": 0.0,
+            "cell_number_rule": "NONINFORMATIVE_FIXED_LAYOUT",
+            "donor_factor": "NOISE_FAMILY",
+            "planned_replicates": 5000
+          }
+        },
+        {
+          "conditional_on_successful_family": true,
+          "failure_fraction": 0.0,
+          "family": "FOUR_MODULES_MATCHING_METHOD_OBSERVED_TARGET",
+          "fdr": {
+            "mcse": 0.0029007728102316737,
+            "mean": 0.04400000000000013,
+            "n": 5000
+          },
+          "method": "CELL_NAIVE_WELCH",
+          "n_failed": 0,
+          "n_generated": 5000,
+          "n_valid": 5000,
+          "scenario_id": "A020",
+          "scenario_parameters": {
+            "status": "FROZEN_MAIN_NOT_EXECUTED",
+            "module_sizes": [
+              5,
+              11,
+              16,
+              17
+            ],
+            "module_membership": "VIRTUAL_DISJOINT",
+            "gamma": 0.2,
+            "mask_policy": "INDEPENDENT_RANDOM_SUBSET_PER_REPLICATE",
+            "delta_applies_to": "MODULE_1_FULL_DONOR_TARGET",
+            "scenario_id": "A020",
+            "block": "A",
+            "n_per_group": 4,
+            "rho": 0.0,
+            "layout": "cycle5_20_80",
+            "signal_structure": "uniform",
+            "coverage": "ceil_0.6K",
+            "delta": 0.0,
+            "noise": "gaussian",
+            "background_overlap": "none",
+            "background_effect": 0.0,
+            "cell_number_rule": "NONINFORMATIVE_FIXED_LAYOUT",
+            "donor_factor": "NOISE_FAMILY",
+            "planned_replicates": 5000
+          }
+        },
+        {
+          "conditional_on_successful_family": true,
+          "failure_fraction": 0.0,
+          "family": "FOUR_MODULES_MATCHING_METHOD_OBSERVED_TARGET",
+          "fdr": {
+            "mcse": 0.005572974395125262,
+            "mean": 0.8078000000000027,
+            "n": 5000
+          },
+          "method": "CELL_NAIVE_WELCH",
+          "n_failed": 0,
+          "n_generated": 5000,
+          "n_valid": 5000,
+          "scenario_id": "A048",
+          "scenario_parameters": {
+            "status": "FROZEN_MAIN_NOT_EXECUTED",
+            "module_sizes": [
+              5,
+              11,
+              16,
+              17
+            ],
+            "module_membership": "VIRTUAL_DISJOINT",
+            "gamma": 0.2,
+            "mask_policy": "INDEPENDENT_RANDOM_SUBSET_PER_REPLICATE",
+            "delta_applies_to": "MODULE_1_FULL_DONOR_TARGET",
+            "scenario_id": "A048",
+            "block": "A",
+            "n_per_group": 4,
+            "rho": 0.4,
+            "layout": "cycle5_20_80",
+            "signal_structure": "uniform",
+            "coverage": "full",
+            "delta": 0.0,
+            "noise": "gaussian",
+            "background_overlap": "none",
+            "background_effect": 0.0,
+            "cell_number_rule": "NONINFORMATIVE_FIXED_LAYOUT",
+            "donor_factor": "NOISE_FAMILY",
+            "planned_replicates": 5000
+          }
+        },
+        {
+          "conditional_on_successful_family": true,
+          "failure_fraction": 0.0,
+          "family": "FOUR_MODULES_MATCHING_METHOD_OBSERVED_TARGET",
+          "fdr": {
+            "mcse": 0.005608035129312434,
+            "mean": 0.8045999999999995,
+            "n": 5000
+          },
+          "method": "CELL_NAIVE_WELCH",
+          "n_failed": 0,
+          "n_generated": 5000,
+          "n_valid": 5000,
+          "scenario_id": "A052",
+          "scenario_parameters": {
+            "status": "FROZEN_MAIN_NOT_EXECUTED",
+            "module_sizes": [
+              5,
+              11,
+              16,
+              17
+            ],
+            "module_membership": "VIRTUAL_DISJOINT",
+            "gamma": 0.2,
+            "mask_policy": "INDEPENDENT_RANDOM_SUBSET_PER_REPLICATE",
+            "delta_applies_to": "MODULE_1_FULL_DONOR_TARGET",
+            "scenario_id": "A052",
+            "block": "A",
+            "n_per_group": 4,
+            "rho": 0.4,
+            "layout": "cycle5_20_80",
+            "signal_structure": "uniform",
+            "coverage": "ceil_0.6K",
+            "delta": 0.0,
+            "noise": "gaussian",
+            "background_overlap": "none",
+            "background_effect": 0.0,
+            "cell_number_rule": "NONINFORMATIVE_FIXED_LAYOUT",
+            "donor_factor": "NOISE_FAMILY",
+            "planned_replicates": 5000
+          }
+        },
+        {
+          "conditional_on_successful_family": true,
+          "failure_fraction": 0.0,
+          "family": "FOUR_MODULES_MATCHING_METHOD_OBSERVED_TARGET",
+          "fdr": {
+            "mcse": 0.002784801433460699,
+            "mean": 0.04040000000000005,
+            "n": 5000
+          },
+          "method": "CELL_NAIVE_WELCH",
+          "n_failed": 0,
+          "n_generated": 5000,
+          "n_valid": 5000,
+          "scenario_id": "A080",
+          "scenario_parameters": {
+            "status": "FROZEN_MAIN_NOT_EXECUTED",
+            "module_sizes": [
+              5,
+              11,
+              16,
+              17
+            ],
+            "module_membership": "VIRTUAL_DISJOINT",
+            "gamma": 0.2,
+            "mask_policy": "INDEPENDENT_RANDOM_SUBSET_PER_REPLICATE",
+            "delta_applies_to": "MODULE_1_FULL_DONOR_TARGET",
+            "scenario_id": "A080",
+            "block": "A",
+            "n_per_group": 12,
+            "rho": 0.0,
+            "layout": "cycle5_20_80",
+            "signal_structure": "uniform",
+            "coverage": "full",
+            "delta": 0.0,
+            "noise": "gaussian",
+            "background_overlap": "none",
+            "background_effect": 0.0,
+            "cell_number_rule": "NONINFORMATIVE_FIXED_LAYOUT",
+            "donor_factor": "NOISE_FAMILY",
+            "planned_replicates": 5000
+          }
+        },
+        {
+          "conditional_on_successful_family": true,
+          "failure_fraction": 0.0,
+          "family": "FOUR_MODULES_MATCHING_METHOD_OBSERVED_TARGET",
+          "fdr": {
+            "mcse": 0.002704193508702086,
+            "mean": 0.03799999999999983,
+            "n": 5000
+          },
+          "method": "CELL_NAIVE_WELCH",
+          "n_failed": 0,
+          "n_generated": 5000,
+          "n_valid": 5000,
+          "scenario_id": "A084",
+          "scenario_parameters": {
+            "status": "FROZEN_MAIN_NOT_EXECUTED",
+            "module_sizes": [
+              5,
+              11,
+              16,
+              17
+            ],
+            "module_membership": "VIRTUAL_DISJOINT",
+            "gamma": 0.2,
+            "mask_policy": "INDEPENDENT_RANDOM_SUBSET_PER_REPLICATE",
+            "delta_applies_to": "MODULE_1_FULL_DONOR_TARGET",
+            "scenario_id": "A084",
+            "block": "A",
+            "n_per_group": 12,
+            "rho": 0.0,
+            "layout": "cycle5_20_80",
+            "signal_structure": "uniform",
+            "coverage": "ceil_0.6K",
+            "delta": 0.0,
+            "noise": "gaussian",
+            "background_overlap": "none",
+            "background_effect": 0.0,
+            "cell_number_rule": "NONINFORMATIVE_FIXED_LAYOUT",
+            "donor_factor": "NOISE_FAMILY",
+            "planned_replicates": 5000
+          }
+        },
+        {
+          "conditional_on_successful_family": true,
+          "failure_fraction": 0.0,
+          "family": "FOUR_MODULES_MATCHING_METHOD_OBSERVED_TARGET",
+          "fdr": {
+            "mcse": 0.00599153633899856,
+            "mean": 0.765599999999998,
+            "n": 5000
+          },
+          "method": "CELL_NAIVE_WELCH",
+          "n_failed": 0,
+          "n_generated": 5000,
+          "n_valid": 5000,
+          "scenario_id": "A112",
+          "scenario_parameters": {
+            "status": "FROZEN_MAIN_NOT_EXECUTED",
+            "module_sizes": [
+              5,
+              11,
+              16,
+              17
+            ],
+            "module_membership": "VIRTUAL_DISJOINT",
+            "gamma": 0.2,
+            "mask_policy": "INDEPENDENT_RANDOM_SUBSET_PER_REPLICATE",
+            "delta_applies_to": "MODULE_1_FULL_DONOR_TARGET",
+            "scenario_id": "A112",
+            "block": "A",
+            "n_per_group": 12,
+            "rho": 0.4,
+            "layout": "cycle5_20_80",
+            "signal_structure": "uniform",
+            "coverage": "full",
+            "delta": 0.0,
+            "noise": "gaussian",
+            "background_overlap": "none",
+            "background_effect": 0.0,
+            "cell_number_rule": "NONINFORMATIVE_FIXED_LAYOUT",
+            "donor_factor": "NOISE_FAMILY",
+            "planned_replicates": 5000
+          }
+        },
+        {
+          "conditional_on_successful_family": true,
+          "failure_fraction": 0.0,
+          "family": "FOUR_MODULES_MATCHING_METHOD_OBSERVED_TARGET",
+          "fdr": {
+            "mcse": 0.00610295807125069,
+            "mean": 0.752600000000002,
+            "n": 5000
+          },
+          "method": "CELL_NAIVE_WELCH",
+          "n_failed": 0,
+          "n_generated": 5000,
+          "n_valid": 5000,
+          "scenario_id": "A116",
+          "scenario_parameters": {
+            "status": "FROZEN_MAIN_NOT_EXECUTED",
+            "module_sizes": [
+              5,
+              11,
+              16,
+              17
+            ],
+            "module_membership": "VIRTUAL_DISJOINT",
+            "gamma": 0.2,
+            "mask_policy": "INDEPENDENT_RANDOM_SUBSET_PER_REPLICATE",
+            "delta_applies_to": "MODULE_1_FULL_DONOR_TARGET",
+            "scenario_id": "A116",
+            "block": "A",
+            "n_per_group": 12,
+            "rho": 0.4,
+            "layout": "cycle5_20_80",
+            "signal_structure": "uniform",
+            "coverage": "ceil_0.6K",
+            "delta": 0.0,
+            "noise": "gaussian",
+            "background_overlap": "none",
+            "background_effect": 0.0,
+            "cell_number_rule": "NONINFORMATIVE_FIXED_LAYOUT",
+            "donor_factor": "NOISE_FAMILY",
+            "planned_replicates": 5000
+          }
+        },
+        {
+          "conditional_on_successful_family": true,
+          "failure_fraction": 0.0,
+          "family": "FOUR_MODULES_MATCHING_METHOD_OBSERVED_TARGET",
+          "fdr": {
+            "mcse": 0.0015144460074039837,
+            "mean": 0.011599999999999994,
+            "n": 5000
+          },
+          "method": "DONOR_MEAN_WELCH",
+          "n_failed": 0,
+          "n_generated": 5000,
+          "n_valid": 5000,
+          "scenario_id": "A016",
+          "scenario_parameters": {
+            "status": "FROZEN_MAIN_NOT_EXECUTED",
+            "module_sizes": [
+              5,
+              11,
+              16,
+              17
+            ],
+            "module_membership": "VIRTUAL_DISJOINT",
+            "gamma": 0.2,
+            "mask_policy": "INDEPENDENT_RANDOM_SUBSET_PER_REPLICATE",
+            "delta_applies_to": "MODULE_1_FULL_DONOR_TARGET",
+            "scenario_id": "A016",
+            "block": "A",
+            "n_per_group": 4,
+            "rho": 0.0,
+            "layout": "cycle5_20_80",
+            "signal_structure": "uniform",
+            "coverage": "full",
+            "delta": 0.0,
+            "noise": "gaussian",
+            "background_overlap": "none",
+            "background_effect": 0.0,
+            "cell_number_rule": "NONINFORMATIVE_FIXED_LAYOUT",
+            "donor_factor": "NOISE_FAMILY",
+            "planned_replicates": 5000
+          }
+        },
+        {
+          "conditional_on_successful_family": true,
+          "failure_fraction": 0.0,
+          "family": "FOUR_MODULES_MATCHING_METHOD_OBSERVED_TARGET",
+          "fdr": {
+            "mcse": 0.0014484293526154152,
+            "mean": 0.0106,
+            "n": 5000
+          },
+          "method": "DONOR_MEAN_WELCH",
+          "n_failed": 0,
+          "n_generated": 5000,
+          "n_valid": 5000,
+          "scenario_id": "A020",
+          "scenario_parameters": {
+            "status": "FROZEN_MAIN_NOT_EXECUTED",
+            "module_sizes": [
+              5,
+              11,
+              16,
+              17
+            ],
+            "module_membership": "VIRTUAL_DISJOINT",
+            "gamma": 0.2,
+            "mask_policy": "INDEPENDENT_RANDOM_SUBSET_PER_REPLICATE",
+            "delta_applies_to": "MODULE_1_FULL_DONOR_TARGET",
+            "scenario_id": "A020",
+            "block": "A",
+            "n_per_group": 4,
+            "rho": 0.0,
+            "layout": "cycle5_20_80",
+            "signal_structure": "uniform",
+            "coverage": "ceil_0.6K",
+            "delta": 0.0,
+            "noise": "gaussian",
+            "background_overlap": "none",
+            "background_effect": 0.0,
+            "cell_number_rule": "NONINFORMATIVE_FIXED_LAYOUT",
+            "donor_factor": "NOISE_FAMILY",
+            "planned_replicates": 5000
+          }
+        },
+        {
+          "conditional_on_successful_family": true,
+          "failure_fraction": 0.0,
+          "family": "FOUR_MODULES_MATCHING_METHOD_OBSERVED_TARGET",
+          "fdr": {
+            "mcse": 0.0023413774598902127,
+            "mean": 0.028199999999999968,
+            "n": 5000
+          },
+          "method": "DONOR_MEAN_WELCH",
+          "n_failed": 0,
+          "n_generated": 5000,
+          "n_valid": 5000,
+          "scenario_id": "A048",
+          "scenario_parameters": {
+            "status": "FROZEN_MAIN_NOT_EXECUTED",
+            "module_sizes": [
+              5,
+              11,
+              16,
+              17
+            ],
+            "module_membership": "VIRTUAL_DISJOINT",
+            "gamma": 0.2,
+            "mask_policy": "INDEPENDENT_RANDOM_SUBSET_PER_REPLICATE",
+            "delta_applies_to": "MODULE_1_FULL_DONOR_TARGET",
+            "scenario_id": "A048",
+            "block": "A",
+            "n_per_group": 4,
+            "rho": 0.4,
+            "layout": "cycle5_20_80",
+            "signal_structure": "uniform",
+            "coverage": "full",
+            "delta": 0.0,
+            "noise": "gaussian",
+            "background_overlap": "none",
+            "background_effect": 0.0,
+            "cell_number_rule": "NONINFORMATIVE_FIXED_LAYOUT",
+            "donor_factor": "NOISE_FAMILY",
+            "planned_replicates": 5000
+          }
+        },
+        {
+          "conditional_on_successful_family": true,
+          "failure_fraction": 0.0,
+          "family": "FOUR_MODULES_MATCHING_METHOD_OBSERVED_TARGET",
+          "fdr": {
+            "mcse": 0.0024049009771177593,
+            "mean": 0.029800000000000004,
+            "n": 5000
+          },
+          "method": "DONOR_MEAN_WELCH",
+          "n_failed": 0,
+          "n_generated": 5000,
+          "n_valid": 5000,
+          "scenario_id": "A052",
+          "scenario_parameters": {
+            "status": "FROZEN_MAIN_NOT_EXECUTED",
+            "module_sizes": [
+              5,
+              11,
+              16,
+              17
+            ],
+            "module_membership": "VIRTUAL_DISJOINT",
+            "gamma": 0.2,
+            "mask_policy": "INDEPENDENT_RANDOM_SUBSET_PER_REPLICATE",
+            "delta_applies_to": "MODULE_1_FULL_DONOR_TARGET",
+            "scenario_id": "A052",
+            "block": "A",
+            "n_per_group": 4,
+            "rho": 0.4,
+            "layout": "cycle5_20_80",
+            "signal_structure": "uniform",
+            "coverage": "ceil_0.6K",
+            "delta": 0.0,
+            "noise": "gaussian",
+            "background_overlap": "none",
+            "background_effect": 0.0,
+            "cell_number_rule": "NONINFORMATIVE_FIXED_LAYOUT",
+            "donor_factor": "NOISE_FAMILY",
+            "planned_replicates": 5000
+          }
+        },
+        {
+          "conditional_on_successful_family": true,
+          "failure_fraction": 0.0,
+          "family": "FOUR_MODULES_MATCHING_METHOD_OBSERVED_TARGET",
+          "fdr": {
+            "mcse": 0.0024589675281021625,
+            "mean": 0.031200000000000002,
+            "n": 5000
+          },
+          "method": "DONOR_MEAN_WELCH",
+          "n_failed": 0,
+          "n_generated": 5000,
+          "n_valid": 5000,
+          "scenario_id": "A080",
+          "scenario_parameters": {
+            "status": "FROZEN_MAIN_NOT_EXECUTED",
+            "module_sizes": [
+              5,
+              11,
+              16,
+              17
+            ],
+            "module_membership": "VIRTUAL_DISJOINT",
+            "gamma": 0.2,
+            "mask_policy": "INDEPENDENT_RANDOM_SUBSET_PER_REPLICATE",
+            "delta_applies_to": "MODULE_1_FULL_DONOR_TARGET",
+            "scenario_id": "A080",
+            "block": "A",
+            "n_per_group": 12,
+            "rho": 0.0,
+            "layout": "cycle5_20_80",
+            "signal_structure": "uniform",
+            "coverage": "full",
+            "delta": 0.0,
+            "noise": "gaussian",
+            "background_overlap": "none",
+            "background_effect": 0.0,
+            "cell_number_rule": "NONINFORMATIVE_FIXED_LAYOUT",
+            "donor_factor": "NOISE_FAMILY",
+            "planned_replicates": 5000
+          }
+        },
+        {
+          "conditional_on_successful_family": true,
+          "failure_fraction": 0.0,
+          "family": "FOUR_MODULES_MATCHING_METHOD_OBSERVED_TARGET",
+          "fdr": {
+            "mcse": 0.002443658383092577,
+            "mean": 0.03079999999999993,
+            "n": 5000
+          },
+          "method": "DONOR_MEAN_WELCH",
+          "n_failed": 0,
+          "n_generated": 5000,
+          "n_valid": 5000,
+          "scenario_id": "A084",
+          "scenario_parameters": {
+            "status": "FROZEN_MAIN_NOT_EXECUTED",
+            "module_sizes": [
+              5,
+              11,
+              16,
+              17
+            ],
+            "module_membership": "VIRTUAL_DISJOINT",
+            "gamma": 0.2,
+            "mask_policy": "INDEPENDENT_RANDOM_SUBSET_PER_REPLICATE",
+            "delta_applies_to": "MODULE_1_FULL_DONOR_TARGET",
+            "scenario_id": "A084",
+            "block": "A",
+            "n_per_group": 12,
+            "rho": 0.0,
+            "layout": "cycle5_20_80",
+            "signal_structure": "uniform",
+            "coverage": "ceil_0.6K",
+            "delta": 0.0,
+            "noise": "gaussian",
+            "background_overlap": "none",
+            "background_effect": 0.0,
+            "cell_number_rule": "NONINFORMATIVE_FIXED_LAYOUT",
+            "donor_factor": "NOISE_FAMILY",
+            "planned_replicates": 5000
+          }
+        },
+        {
+          "conditional_on_successful_family": true,
+          "failure_fraction": 0.0,
+          "family": "FOUR_MODULES_MATCHING_METHOD_OBSERVED_TARGET",
+          "fdr": {
+            "mcse": 0.002711018613802732,
+            "mean": 0.03820000000000006,
+            "n": 5000
+          },
+          "method": "DONOR_MEAN_WELCH",
+          "n_failed": 0,
+          "n_generated": 5000,
+          "n_valid": 5000,
+          "scenario_id": "A112",
+          "scenario_parameters": {
+            "status": "FROZEN_MAIN_NOT_EXECUTED",
+            "module_sizes": [
+              5,
+              11,
+              16,
+              17
+            ],
+            "module_membership": "VIRTUAL_DISJOINT",
+            "gamma": 0.2,
+            "mask_policy": "INDEPENDENT_RANDOM_SUBSET_PER_REPLICATE",
+            "delta_applies_to": "MODULE_1_FULL_DONOR_TARGET",
+            "scenario_id": "A112",
+            "block": "A",
+            "n_per_group": 12,
+            "rho": 0.4,
+            "layout": "cycle5_20_80",
+            "signal_structure": "uniform",
+            "coverage": "full",
+            "delta": 0.0,
+            "noise": "gaussian",
+            "background_overlap": "none",
+            "background_effect": 0.0,
+            "cell_number_rule": "NONINFORMATIVE_FIXED_LAYOUT",
+            "donor_factor": "NOISE_FAMILY",
+            "planned_replicates": 5000
+          }
+        },
+        {
+          "conditional_on_successful_family": true,
+          "failure_fraction": 0.0,
+          "family": "FOUR_MODULES_MATCHING_METHOD_OBSERVED_TARGET",
+          "fdr": {
+            "mcse": 0.002533936890933449,
+            "mean": 0.033200000000000014,
+            "n": 5000
+          },
+          "method": "DONOR_MEAN_WELCH",
+          "n_failed": 0,
+          "n_generated": 5000,
+          "n_valid": 5000,
+          "scenario_id": "A116",
+          "scenario_parameters": {
+            "status": "FROZEN_MAIN_NOT_EXECUTED",
+            "module_sizes": [
+              5,
+              11,
+              16,
+              17
+            ],
+            "module_membership": "VIRTUAL_DISJOINT",
+            "gamma": 0.2,
+            "mask_policy": "INDEPENDENT_RANDOM_SUBSET_PER_REPLICATE",
+            "delta_applies_to": "MODULE_1_FULL_DONOR_TARGET",
+            "scenario_id": "A116",
+            "block": "A",
+            "n_per_group": 12,
+            "rho": 0.4,
+            "layout": "cycle5_20_80",
+            "signal_structure": "uniform",
+            "coverage": "ceil_0.6K",
+            "delta": 0.0,
+            "noise": "gaussian",
+            "background_overlap": "none",
+            "background_effect": 0.0,
+            "cell_number_rule": "NONINFORMATIVE_FIXED_LAYOUT",
+            "donor_factor": "NOISE_FAMILY",
+            "planned_replicates": 5000
+          }
+        }
+      ],
+      "note": "",
+      "uncertainty": "MEAN_PLUS_MINUS_1.96_MCSE"
+    }
+  ],
+  "code": {
+    "path": "2_code/75_verified_figures/build_figures.py",
+    "bytes": 27436,
+    "sha256": "4f0115090412baf848885b5f3650bda3a93c8bcbc8329f3a5754640fa30aa4d4"
+  },
+  "visual_qa": "SEE_SEPARATE_FIGURE_VISUAL_QA_JSON",
+  "visual_qa_locator": "3_results/75_verified_figures_and_manuscript/FIGURE_VISUAL_QA.json",
+  "out_of_canvas_text": [],
+  "scope": "AUTHOR_REVIEW_NOT_JOURNAL_COMPLIANCE"
+}

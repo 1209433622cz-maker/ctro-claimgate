@@ -1,0 +1,123 @@
+{
+  "coefficients": [
+    "1",
+    "1",
+    "0",
+    "0",
+    "0"
+  ],
+  "masks": [
+    {
+      "members": [
+        0,
+        1,
+        2
+      ],
+      "target_fraction": "2/3",
+      "target": 0.6666666666666666
+    },
+    {
+      "members": [
+        0,
+        1,
+        3
+      ],
+      "target_fraction": "2/3",
+      "target": 0.6666666666666666
+    },
+    {
+      "members": [
+        0,
+        1,
+        4
+      ],
+      "target_fraction": "2/3",
+      "target": 0.6666666666666666
+    },
+    {
+      "members": [
+        0,
+        2,
+        3
+      ],
+      "target_fraction": "1/3",
+      "target": 0.3333333333333333
+    },
+    {
+      "members": [
+        0,
+        2,
+        4
+      ],
+      "target_fraction": "1/3",
+      "target": 0.3333333333333333
+    },
+    {
+      "members": [
+        0,
+        3,
+        4
+      ],
+      "target_fraction": "1/3",
+      "target": 0.3333333333333333
+    },
+    {
+      "members": [
+        1,
+        2,
+        3
+      ],
+      "target_fraction": "1/3",
+      "target": 0.3333333333333333
+    },
+    {
+      "members": [
+        1,
+        2,
+        4
+      ],
+      "target_fraction": "1/3",
+      "target": 0.3333333333333333
+    },
+    {
+      "members": [
+        1,
+        3,
+        4
+      ],
+      "target_fraction": "1/3",
+      "target": 0.3333333333333333
+    },
+    {
+      "members": [
+        2,
+        3,
+        4
+      ],
+      "target_fraction": "0",
+      "target": 0.0
+    }
+  ],
+  "target_distribution": [
+    {
+      "target_fraction": "0",
+      "probability_fraction": "1/10"
+    },
+    {
+      "target_fraction": "1/3",
+      "probability_fraction": "3/5"
+    },
+    {
+      "target_fraction": "2/3",
+      "probability_fraction": "3/10"
+    }
+  ],
+  "mean_fraction": "2/5",
+  "mean": 0.4,
+  "variance_fraction": "1/25",
+  "variance": 0.04,
+  "finite_population_formula": "(1-m/K)*S_beta_squared/m; S_beta_squared has denominator K-1",
+  "equal_mask_probability": true,
+  "mask_shared_across_donors": true,
+  "not_cross_K_experiment": true
+}

@@ -24,3 +24,7 @@ credentials/
 controlled_review/
 participant_mappings/
 raw_expression/
+
+# Owner-authorized, scoped RP V5.1 publication artifacts only.
+!5_manuscript/rp_v5_1/v1.0.0/*.pdf
+!6_release/rp_v5_1/v1.0.0/*.zip

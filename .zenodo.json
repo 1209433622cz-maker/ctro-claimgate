@@ -1,0 +1,16 @@
+{
+  "title": "CTRO RP V5.1 synthetic simulation results and reproduction materials",
+  "upload_type": "dataset",
+  "publication_date": "2026-10-13",
+  "version": "1.0.0",
+  "creators": [
+    {"name":"Chen, Zhi","affiliation":"School of Medicine, The Chinese University of Hong Kong, Shenzhen","orcid":"0009-0001-0072-5576"},
+    {"name":"Qi, Teng","affiliation":"School of Medicine, The Chinese University of Hong Kong, Shenzhen","orcid":"0009-0007-7648-4776"}
+  ],
+  "description": "Companion materials for Target dependent interval coverage in donor nested gene module contrasts. The frozen continuous model contains 192 scenarios with 5000 original replicates each. The deposit provides full aggregate tables, 192 scenario summaries, 576 existing replay fixtures, exact analytical outputs, source-bound figures and the manuscript. The tested offline reproduction entry point reconstructs a fixed-ID subset and seven synthetic figures under the pinned runtime. It does not contain or rerun all 960000 raw records, demonstrate cross-OS portability or provide patient-dependent reproduction inputs. An existing negative PBC illustration in the manuscript is descriptive, not biological validation. Project-owned software is MIT; manuscript, author-created figures and project-generated synthetic results are CC BY 4.0. Excluded third-party and human input data retain their original terms.",
+  "license":"cc-by-4.0",
+  "access_right":"open",
+  "keywords":["simulation","gene modules","estimands","donor dependence","confidence interval coverage","informative cluster size","reproducibility"],
+  "related_identifiers":[{"identifier":"https://github.com/1209433622cz-maker/ctro-claimgate","relation":"isSupplementTo","scheme":"url"}],
+  "notes":"No funding or competing interests are declared. Generative AI assistance is disclosed in the manuscript. Specific CRediT roles remain unconfirmed and have not been randomly allocated. This deposit has no registered DOI until an actual Zenodo publication succeeds."
+}
