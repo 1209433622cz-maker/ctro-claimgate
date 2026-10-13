@@ -6,7 +6,7 @@ Authors: Zhi Chen and Teng Qi. School of Medicine, The Chinese University of Hon
 
 ## Current release
 
-Version `ctro-rpv5.1-v1.0.0`, 13 October 2026. The owner explicitly approved PDF/Markdown author review and public release. The article is not submitted, peer-reviewed or accepted. The author-reported funding/competing interests/ethics declarations are in the manuscript. Specific CRediT roles and target journal remain unconfirmed; roles have not been invented or randomly assigned.
+Version `ctro-rpv5.1-v1.0.1`, 13 October 2026. This patch preserves the original SVG bytes across Git transport; current artifact directories retain their `v1.0.0` names. The initial `ctro-rpv5.1-v1.0.0` tag remains historical and is superseded by this verified-byte release, without a force rewrite. The owner explicitly approved PDF/Markdown author review and public release. The article is not submitted, peer-reviewed or accepted. The author-reported funding/competing interests/ethics declarations are in the manuscript. Specific CRediT roles and target journal remain unconfirmed; roles have not been invented or randomly assigned.
 
 The main simulation completed **192 scenarios × 5000 replicates = 960000 existing instances**, with no failed modules. This release does not generate new primary instances. It preserves the original main endpoints and primary display coordinates. Its contribution is a bounded quantitative comparison of complete-donor, observed-donor and population-cell targets, not a novel universal scoring method or disease mechanism.
 

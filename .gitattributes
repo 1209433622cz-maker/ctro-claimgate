@@ -5,3 +5,4 @@
 *.tsv whitespace=-blank-at-eol
 *.svg whitespace=-blank-at-eol
 *.md whitespace=-blank-at-eol
+4_figures/rp_v5_1/v1.0.0/*.svg -text

@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "Please cite this versioned computational research release. No archival DOI has yet been registered."
 title: "Target dependent interval coverage in donor nested gene module contrasts"
 type: software
-version: 1.0.0
+version: 1.0.1
 date-released: 2026-10-13
 authors:
   - family-names: Chen

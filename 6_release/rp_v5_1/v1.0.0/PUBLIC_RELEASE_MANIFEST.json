@@ -1,5 +1,5 @@
 {
-  "release": "ctro-rpv5.1-v1.0.0",
+  "release": "ctro-rpv5.1-v1.0.1",
   "generated_files": [
     {
       "source": {
@@ -65,31 +65,31 @@
       "source": {
         "path": "6_release/rp_v5_1_manuscript/Stage79/CITATION.cff",
         "bytes": 1058,
-        "sha256": "437d9674167044b896744ebf9b108f95b74bc66052d3df5ab78d045e843dd8dc"
+        "sha256": "dfa5dbbf0e109e6349365d347b158886f144715dca1c4fb3b8f6d60fcfdf505d"
       },
       "public_path": "CITATION.cff",
       "bytes": 1058,
-      "sha256": "437d9674167044b896744ebf9b108f95b74bc66052d3df5ab78d045e843dd8dc"
+      "sha256": "dfa5dbbf0e109e6349365d347b158886f144715dca1c4fb3b8f6d60fcfdf505d"
     },
     {
       "source": {
         "path": "6_release/rp_v5_1_manuscript/Stage79/.zenodo.json",
         "bytes": 2011,
-        "sha256": "4671e252b6bae1f48107c981299c5de0387d8404d770d22e1767673a0157f041"
+        "sha256": "39f49f4d4c88820ca4fcbc6386c915a145fc7e74906f3f676e7591d08258e603"
       },
       "public_path": ".zenodo.json",
       "bytes": 2011,
-      "sha256": "4671e252b6bae1f48107c981299c5de0387d8404d770d22e1767673a0157f041"
+      "sha256": "39f49f4d4c88820ca4fcbc6386c915a145fc7e74906f3f676e7591d08258e603"
     },
     {
       "source": {
         "path": "6_release/rp_v5_1_manuscript/Stage79/README_PUBLIC.md",
-        "bytes": 5902,
-        "sha256": "3e9599634bcd960e91941433ff8be4f8d9f0ea171dd77a07a74716957c3f21c5"
+        "bytes": 6156,
+        "sha256": "8c62e76e97645b3b7db9ac3d348fe64b4cdb67a28c84a6a5367aec867f3ab7ad"
       },
       "public_path": "README.md",
-      "bytes": 5902,
-      "sha256": "3e9599634bcd960e91941433ff8be4f8d9f0ea171dd77a07a74716957c3f21c5"
+      "bytes": 6156,
+      "sha256": "8c62e76e97645b3b7db9ac3d348fe64b4cdb67a28c84a6a5367aec867f3ab7ad"
     },
     {
       "source": {
